@@ -58,6 +58,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
   })
+      .state('app.tree_details', {
+      url: '/tree_details',
+      views: {
+          'menuContent': {
+              templateUrl: 'templates/tree_details.html',
+              // controller: 'PlaylistsCtrl'
+          }
+      }
+  })
       .state('app.screen4', {
       url: '/screen4',
       views: {
