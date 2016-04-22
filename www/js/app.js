@@ -57,7 +57,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           controller: 'PlaylistsCtrl'
         }
       }
-    })
+  })
+      .state('app.tree_details', {
+      url: '/tree_details',
+      views: {
+          'menuContent': {
+              templateUrl: 'templates/tree_details.html',
+              // controller: 'PlaylistsCtrl'
+          }
+      }
+  })
+      .state('app.screen4', {
+      url: '/screen4',
+      views: {
+          'menuContent': {
+              templateUrl: 'templates/screen4.html',
+//              controller: 'PlaylistsCtrl'
+          }
+      }
+  })
+      .state('app.screen5', {
+      url: '/screen5',
+      views: {
+          'menuContent': {
+              templateUrl: 'templates/screen5.html',
+              //              controller: 'PlaylistsCtrl'
+          }
+      }
+  })
 
   .state('app.single', {
     url: '/playlists/:playlistId',
