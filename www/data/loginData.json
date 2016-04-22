@@ -1,0 +1,23 @@
+{
+    "login": [{
+            "id": 1,
+            "name": "Kaushik Gotefode",
+            "email": "kaushikgotefode@gmail.com",
+            "password": "1234",
+            "gender": "male",
+            "age": 26,
+            "city": "Bangalore",
+            "address": "HSR layout,Bangalore"
+        }, {
+            "id": 2,
+            "name": "Avnesh Shakya",
+            "email": "avneshshakya@gmail.com",
+            "password": "1234",
+            "gender": "male",
+            "age": 26,
+            "city": "Bangalore",
+            "address": "HSR layout,Bangalore"
+        }
+
+    ]
+}
