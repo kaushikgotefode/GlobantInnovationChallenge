@@ -1,20 +1,84 @@
-.adoptTree, .congrats {
+.adoptTree,
+.congrats {
     background: url('../img/adopt_bg.png') no-repeat center;
     height: 100%;
 }
+
 .textCenter {
     text-align: center;
 }
+
 .height410 {
     height: 410px;
 }
+
 .whiteFont {
     color: white;
 }
-.uppercaseFont {
+
+
+/*userProfile css*/
+
+.uppercaseFontUser {
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 22px;
+    color: white;
 }
+
+.userPic {
+    width: 180px;
+    height: 180px;
+    padding-top: 80px;
+    margin: 0px auto;
+}
+
+.userPic img {
+    border-radius: 90px;
+    width: inherit;
+    height: inherit;
+}
+
+.userInfo {
+    padding-top: 120px;
+}
+
+.userDetail {
+    color: white;
+    text-align: center;
+    top:0px;
+}
+
+.userDetail span {
+    color: white;
+    margin: 2px 5px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.userDetail p {
+    font-size: 13px;
+    color: #DDD;
+    text-transform: uppercase;
+}
+
+.userstatus {
+    font-size: 22px;
+}
+
+.userDetail .row {
+    margin-top: 20px;
+}
+
+.userDetail .input-field button {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.userDetail a {
+    color: #ccc;
+}
+
 .main {
     height: auto;
     width: auto;
@@ -33,6 +97,7 @@
     overflow: auto;
     margin-top: 40%;
 }
+
 .treeProHd{ background:url(../img/treeProHdBg.jpg) no-repeat 0 0; float:left; width:100%; height:300px; -moz-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;}
@@ -41,3 +106,44 @@
   .border-right{ border-right:1px solid #ccc;}
   .tfper.active{ border-bottom: 2px solid #f7071d;}
   .mood{ background-color:#f3f3f2; float:left; width:100%; height:330px;}
+
+
+img.thumbnail {
+    width: 85%;
+    border-radius: 50%;
+}
+
+/*.image:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+}*/
+
+.image {
+    padding: 10px;
+}
+
+.delete {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.emoNum {
+    position:absolute;
+    color: white;
+    border-color: white;
+    top:0;
+    right:15px;
+    height: 26px;
+    width: 26px;
+    background: #F00;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+}
+.ion-ios-close-empty:before {
+    font-size: 27px;
+    line-height: 32px;
+}

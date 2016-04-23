@@ -11,6 +11,7 @@
 :-ms-input-placeholder {
     color: white;
 }
+
 @font-face {
     font-family: 'BoutiqueScript';
     src: url('../../fonts/BoutiqueScript.otf'), url('../../fonts/BoutiqueScript.ttf');
@@ -20,6 +21,17 @@
     background: rgba(61, 194, 177, 1);
     color: white;
     text-transform: uppercase;
+    &:focus {
+        background: rgba(61, 194, 177, 1);
+        color: white;        
+    }
+    &.activated {
+        background: rgba(61, 194, 177, 1);
+        color: white;         
+    }
+    &:hover {
+        color: white;             
+    }
 }
 
 //LOGIN PAGE
@@ -76,11 +88,36 @@
     line-height:0;
 }
 
+//PROFILE PAGE
+.profile {
+    background: url('../../../../img/adopt_bg.png') no-repeat center;
+    height: 100%;
+    position: relative;
+    ion-header-bar {
+        background: transparent;
+        border: none;
+        .top-icon {
+            float: right;
+            color: black;
+            font-size: 32px;
+        }
+    }
+}
+
 //CONGRATS PAGE
 .congrats {
     background: url('../../../../img/adopt_bg.png') no-repeat center;
     height: 100%;
     position: relative;
+    ion-header-bar {
+        background: transparent;
+        border: none;
+        .top-icon {
+            float: right;
+            color: black;
+            font-size: 32px;
+        }
+    }
     ion-content {
         padding: 30px 0 0;
         .slider {
@@ -89,6 +126,11 @@
                 height: 66%;
             }
         }
+    }
+    .btn-tree {
+        position: absolute;
+        bottom: 0;
+        margin: 0;        
     }
 }
 
@@ -99,6 +141,7 @@
     background-size: contain;
     ion-header-bar {
         background: transparent;
+        border: none;
         .top-icon {
             float: right;
             color: white;
@@ -115,13 +158,18 @@
         position: absolute;
         bottom: 0;
         margin: 0;
+        background: white;
+        color: #3dc2b1;
     }
 }
 
 //ADOPT TREE PAGE
 .adoptTree {
+    position: relative;
+    height: 100%;
     ion-header-bar {
         background: rgba(61, 194, 177, 0.5);
+        border: none;
         .top-icon {
             float: right;
             color: white;
@@ -141,6 +189,20 @@
             width: 200px;
         }
     }
+    ion-content {
+        padding: 30px 0 0;
+        .slider {
+            height: 450px;
+            .tree-img {
+                height: 66%;
+            }
+        }
+    }
+    .btn-tree {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+    }
 }
 
 //DASHBOARD PAGE
@@ -149,6 +211,7 @@
     height: 100%;
     ion-header-bar {
         background: rgba(255, 255, 255, 0.25);
+        border: none;
         .top-icon {
             float: right;
             color: white;
@@ -205,7 +268,6 @@
                     }
                 }
                 .star {
-                    background: #35c61d;
                     width: 60px;
                     height: 60px;
                     position: absolute;
@@ -218,12 +280,48 @@
                         margin: 0;
                         line-height: 50px;
                     }
+                    &.green {
+                        background: #35c61d;                        
+                    }
+                    &.blue {
+                        background: blue;
+                    }
+                    &.orange {
+                        background: orange;
+                    }
+                    &.yellow {
+                        background: yellow;
+                    }
+                    &.purple {
+                        background: purple;
+                    }
                 }
             }
         }
         .card-wrapper {
             background: #f3f3f3;
-            .card-tree {
+            padding: 20px 10px;
+            .left-col, .right-col {
+                margin: 2.5%;
+                width: 45%;
+                float: left;
+                .card-tree {
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+                    background: white;
+                    text-transform: uppercase;
+                    margin: 10px 0;
+                    p {
+                        padding: 5px;
+                        text-align: center;
+                        margin: 0;
+                        padding: 10px 0;
+                        font-size: 16px;
+                    }
+                    img {
+                        width: 93%;
+                        margin: 0 3.5%;
+                    }
+                }
 
             }
         }
