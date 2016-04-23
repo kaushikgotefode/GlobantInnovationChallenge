@@ -9843,7 +9843,8 @@ a.button {
   padding: 15px !important;
   text-align: center !important;
   color: #FFF;
-  font-size: 17px; }
+  font-size: 17px;
+  background: none; }
 
 .chipco-submit-btn:hover {
   text-decoration: none;
