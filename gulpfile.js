@@ -27,7 +27,7 @@ gulp.task('sass', function(done) {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(paths.sass, ['sass']);
+  gulp.watch("./www/lib/ionic/**/*.scss", ['sass']);
 });
 
 gulp.task('install', ['git-check'], function() {
