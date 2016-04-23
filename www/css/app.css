@@ -104,6 +104,11 @@
     width: 30px;
     height: 30px;
 }
+.hdr-treePfl-img{
+	border-radius: 30px;
+    width: 60px;
+    height: 60px;
+}
 
 .title.textCenter {
     text-align: center !important;

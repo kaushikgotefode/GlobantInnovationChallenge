@@ -1,38 +1,45 @@
-<ion-header-bar align-title="left" class="bar-positive">
-    <div class="buttons">
-        <button class="button" ui-sref="app.profile">Profile</button>
-    </div>
-    <h1 class="title">Tree Edit</h1>
-    <div class="buttons">
-        <button class="button" ui-sref="app.adopt">Adopt</button>
-    </div>
-</ion-header-bar>
 
+<section class="editTreeProfile">
+    <ion-header-bar align-title="left" class="bar-positive">
+        <div class="header-content">Look what your seeing?</div>
+    </ion-header-bar>
 
-<ion-content>
-    <h1>Edit Tree Details</h1>
-    <div class="responsive-sm">
-        <div class="list card">
-
-            <div class="item item-avatar">
-                <img src="../img/tree.png">
-                <h2>Some Tree Name</h2>
-                <p>BlaBlaBla</p>
-                <p><i class="ion-android-pin"></i> HSR Sector 1</p>
+    <form class="editTreeForm">
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input class="validate center-align" id="name" type="text" ng-model="tree.name" placeholder="Name of the Tree">
             </div>
-
-            <div class="item item-body">
-                <img class="full-image" src="../img/tree.png">
-                <p>
-                    This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
-                    the content is from a card-body consisting of an image and paragraph text. The footer
-                    consists of tabs, icons aligned left, within the card-footer.
-                </p>
-            </div>
-
         </div>
-    </div>
-    <label class="item">
-        <button class="button button-block button-positive" type=""><i class="ion-heart"></i> Adopt Me</button>
-    </label>
-</ion-content>
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input class="validate center-align" id="botInfo" type="text" ng-model="tree.botInfo" placeholder="Botanical Information">
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input class="validate center-align" id="location" type="text" ng-model="tree.location" placeholder="Location">
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input class="validate center-align" id="height" type="text" ng-model="tree.height" placeholder="Height">
+            </div>
+        </div>
+
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input class="validate center-align" id="email" type="text" ng-model="tree.branchCircum" placeholder="Branch Circumference">
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input class="validate center-align" id="email" type="text" ng-model="tree.age" placeholder="Age of Tree">
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <button type="submit" class="s12 chipco-submit-btn button-full" ng-click="doLogin()">Save</button>
+            </div>
+        </div>
+    </form>
+</section>
