@@ -1,7 +1,9 @@
 <section class="dashboard">
     <ion-header-bar align-title="left">
         <div class="col-20">
-            <img src="../img/user.png" class="user-icon" alt="" ui-sref="app.dash">
+
+            <img class="hdr-login-img" ng-src="{{currntUsr.image}}" class="user-icon" alt="" ui-sref="app.profile">
+
         </div>
         <div class="col-60">
             <h3>Chip.co</h3>
@@ -14,13 +16,13 @@
     <ion-content>
         <div class="row top-row">
             <div class="col-25">
-                <b>2</b>
+                <b>{{currntUsr.noOfAdoptedTrees}}</b>
                 <p>trees</p>
             </div>
             <div class="col-40">
                 <div class="points">
                     <div class="inner">
-                        <h2>2000
+                        <h2>{{currntUsr.VGC}}
                             <p>vgc</p>
                         </h2>
                     </div>
