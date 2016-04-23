@@ -6840,10 +6840,6 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.adopttree {
-  background: url(../../../../img/adopt_bg.png);
-  color: white; }
-
 ::-webkit-input-placeholder {
   color: white; }
 
@@ -6858,8 +6854,13 @@ a.button {
 :-ms-input-placeholder {
   color: white; }
 
+@font-face {
+  font-family: 'BoutiqueScript';
+  src: url("../../fonts/BoutiqueScript.otf"), url("../../fonts/BoutiqueScript.ttf");
+  font-style: normal; }
+
 .chipco-login-form {
-  background: url(../../../../img/Chipco-login-bg.png) no-repeat 0 0;
+  background: url(../../../../img/login-bg.png) no-repeat 0 0;
   -moz-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
@@ -6878,7 +6879,9 @@ a.button {
 
 .chipco-login-form input[type="text"], .chipco-login-form input[type="password"] {
   border-bottom: 1px solid #f2f2f2;
-  color: white; }
+  color: white;
+  background: transparent;
+  margin: 10px auto; }
 
 .chipco-submit-btn {
   border: 2px solid #f2f2f2;
@@ -6886,7 +6889,8 @@ a.button {
   text-align: center;
   color: #FFF;
   font-size: 17px;
-  background: transparent; }
+  background: transparent;
+  margin: 10px 0; }
 
 .chipco-submit-btn:hover {
   text-decoration: none;
@@ -6905,6 +6909,46 @@ a.button {
 .font-39 {
   font-size: 39px;
   line-height: 0; }
+
+.location {
+  background: url(../../../../img/login-bg.png);
+  height: 100%;
+  background-size: contain; }
+  .location ion-header-bar {
+    background: transparent; }
+    .location ion-header-bar .top-icon {
+      float: right;
+      color: white;
+      font-size: 30px; }
+  .location ion-content {
+    text-align: center; }
+    .location ion-content img {
+      width: 50%; }
+
+.dashboard {
+  background: url(../../../../img/dash_bg.jpg) no-repeat top left;
+  height: 100%; }
+  .dashboard ion-header-bar {
+    background: rgba(255, 255, 255, 0.5); }
+    .dashboard ion-header-bar .top-icon {
+      float: right;
+      color: white;
+      font-size: 24px; }
+    .dashboard ion-header-bar .user-icon {
+      height: 30px;
+      width: 30px; }
+    .dashboard ion-header-bar h3 {
+      font-family: "BoutiqueScript";
+      color: white;
+      margin: 0; }
+  .dashboard ion-content {
+    padding: 100px 0 0; }
+    .dashboard ion-content .card {
+      width: 50%;
+      float: left; }
+    .dashboard ion-content .card-tree {
+      height: 100px;
+      width: 50%; }
 
 /*!
   Ionicons, v2.0.1
@@ -9830,7 +9874,6 @@ a.button {
 .ion-upload:before {
   content: ""; }
 
-<<<<<<< 70ddce38001998a02087d987e22bab0e8983b629
 .ion-usb:before {
   content: ""; }
 
@@ -9843,21 +9886,6 @@ a.button {
 .ion-volume-low:before {
   content: ""; }
 
-.chipco-login-form ::-webkit-input-placeholder {
-  color: white; }
-
-.chipco-login-form :-moz-placeholder {
-  /* Firefox 18- */
-  color: white; }
-
-.chipco-login-form ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: white; }
-
-.chipco-login-form :-ms-input-placeholder {
-  color: white; }
-
-
 .ion-volume-medium:before {
   content: ""; }
 
@@ -9867,25 +9895,14 @@ a.button {
 .ion-wand:before {
   content: ""; }
 
-
-.chipco-submit-btn {
-  border: 2px solid #f2f2f2;
-  padding: 15px !important;
-  text-align: center !important;
-  color: #FFF;
-  font-size: 17px;
-  background: none; }
-
 .ion-waterdrop:before {
   content: ""; }
-
 
 .ion-wifi:before {
   content: ""; }
 
 .ion-wineglass:before {
   content: ""; }
-
 
 .ion-woman:before {
   content: ""; }
@@ -9895,8 +9912,3 @@ a.button {
 
 .ion-xbox:before {
   content: ""; }
-
-.font-26 {
-  font-size: 26px !important;
-  line-height: 0; }
-

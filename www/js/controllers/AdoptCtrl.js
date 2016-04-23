@@ -8,6 +8,13 @@
             $scope.treeList = response.data.tree;
         });
 
+        $scope.slideHasChanged = function($index){
+			    console.log('slideHasChanged $index=' + $index);
+			  };
+
+        $scope.adoptTree = function(tree) {
+            console.log(tree);
+        }
 
     }]);
 })();
