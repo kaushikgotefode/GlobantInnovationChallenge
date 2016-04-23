@@ -90,6 +90,11 @@
             }
         }
     }
+    .btn-tree {
+        position: absolute;
+        bottom: 0;
+        margin: 0;        
+    }
 }
 
 //LOCATION PAGE
@@ -115,6 +120,8 @@
         position: absolute;
         bottom: 0;
         margin: 0;
+        background: white;
+        color: #3dc2b1;
     }
 }
 
@@ -223,8 +230,11 @@
         }
         .card-wrapper {
             background: #f3f3f3;
+            padding: 20px 10px;
             .card-tree {
-
+                background: white;
+                margin: 2.5%;
+                width: 44%;
             }
         }
     }
