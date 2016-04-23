@@ -1,3 +1,43 @@
-ion-header-bar {
-	background-color: red;
+.chipco-login-form {
+	background: url(../img/Chipco-login-bg.png) no-repeat 0 0;
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	background-size:100% 100%;
+	padding:0 30px;
+}
+.chipco-login-form input, .chipco-login-form input:focus, .chipco-login-form .input-field label {
+	color:#f2f2f2;
+	float:left;
+	width:100%;
+	text-align:center;
+	font-size:18px;
+}
+.chipco-login-form input[type="text"], .chipco-login-form input[type="password"] {
+	border-bottom: 1px solid #f2f2f2;
+    color: white;
+}
+.chipco-submit-btn {
+	border:2px solid #f2f2f2;
+	padding:15px !important;
+	text-align:center !important;
+	color:#FFF;
+	font-size: 17px;
+}
+.chipco-submit-btn:hover {
+	text-decoration:none;
+	color:#FFF;
+}
+.whiteText {
+	color:#f2f2f2;
+}
+.whiteText:hover {
+	color:#f2f2f2;
+	text-decoration:none;
+}
+.chipco-login-form input[type="text"]:focus:not([readonly]) + label, .chipco-login-form input[type="password"]:focus:not([readonly]) + label {
+	color: #f2f2f2 !important;
+}
+.font-39 {
+	font-size:39px !important;
+	line-height:0;
 }

@@ -2,7 +2,7 @@
     "login": [{
             "id": 1,
             "name": "Kaushik Gotefode",
-            "email": "kaushikgotefode@gmail.com",
+            "email": "kaushikgotefode@chip.co",
             "password": "1234",
             "gender": "male",
             "age": 26,
@@ -11,7 +11,7 @@
         }, {
             "id": 2,
             "name": "Avnesh Shakya",
-            "email": "avneshshakya@gmail.com",
+            "email": "avneshshakya@chip.co",
             "password": "1234",
             "gender": "male",
             "age": 26,
