@@ -6928,7 +6928,8 @@ a.button {
   height: 100%;
   position: relative; }
   .congrats ion-header-bar {
-    background: transparent; }
+    background: transparent;
+    border: none; }
     .congrats ion-header-bar .top-icon {
       float: right;
       color: black;
@@ -6949,7 +6950,8 @@ a.button {
   height: 100%;
   background-size: contain; }
   .location ion-header-bar {
-    background: transparent; }
+    background: transparent;
+    border: none; }
     .location ion-header-bar .top-icon {
       float: right;
       color: white;
@@ -6969,7 +6971,8 @@ a.button {
   position: relative;
   height: 100%; }
   .adoptTree ion-header-bar {
-    background: rgba(61, 194, 177, 0.5); }
+    background: rgba(61, 194, 177, 0.5);
+    border: none; }
     .adoptTree ion-header-bar .top-icon {
       float: right;
       color: white;
@@ -7000,7 +7003,8 @@ a.button {
   background: url(../../../../img/dash_bg.jpg) no-repeat top left;
   height: 100%; }
   .dashboard ion-header-bar {
-    background: rgba(255, 255, 255, 0.25); }
+    background: rgba(255, 255, 255, 0.25);
+    border: none; }
     .dashboard ion-header-bar .top-icon {
       float: right;
       color: white;
@@ -7049,7 +7053,6 @@ a.button {
               font-size: 20px;
               color: #1dc4c6; }
         .dashboard ion-content .top-row .points .star {
-          background: #35c61d;
           width: 60px;
           height: 60px;
           position: absolute;
@@ -7061,13 +7064,37 @@ a.button {
             font-size: 36px;
             margin: 0;
             line-height: 50px; }
+          .dashboard ion-content .top-row .points .star.green {
+            background: #35c61d; }
+          .dashboard ion-content .top-row .points .star.blue {
+            background: blue; }
+          .dashboard ion-content .top-row .points .star.orange {
+            background: orange; }
+          .dashboard ion-content .top-row .points .star.yellow {
+            background: yellow; }
+          .dashboard ion-content .top-row .points .star.purple {
+            background: purple; }
     .dashboard ion-content .card-wrapper {
       background: #f3f3f3;
       padding: 20px 10px; }
-      .dashboard ion-content .card-wrapper .card-tree {
-        background: white;
+      .dashboard ion-content .card-wrapper .left-col, .dashboard ion-content .card-wrapper .right-col {
         margin: 2.5%;
-        width: 44%; }
+        width: 45%;
+        float: left; }
+        .dashboard ion-content .card-wrapper .left-col .card-tree, .dashboard ion-content .card-wrapper .right-col .card-tree {
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+          background: white;
+          text-transform: uppercase;
+          margin: 10px 0; }
+          .dashboard ion-content .card-wrapper .left-col .card-tree p, .dashboard ion-content .card-wrapper .right-col .card-tree p {
+            padding: 5px;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+            font-size: 16px; }
+          .dashboard ion-content .card-wrapper .left-col .card-tree img, .dashboard ion-content .card-wrapper .right-col .card-tree img {
+            width: 93%;
+            margin: 0 3.5%; }
 
 /*!
   Ionicons, v2.0.1
