@@ -1,0 +1,128 @@
+//OVERRIDE
+::-webkit-input-placeholder {
+    color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: white;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder {
+    color: white;
+}
+@font-face {
+    font-family: 'BoutiqueScript';
+    src: url('../../fonts/BoutiqueScript.otf'), url('../../fonts/BoutiqueScript.ttf');
+    font-style: normal;
+}
+
+//LOGIN PAGE
+.chipco-login-form {
+    background: url(../../../../img/login-bg.png) no-repeat 0 0;
+    -moz-background-size:100% 100%;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    padding:0 30px;
+    text-align: center;
+    img {
+        margin: 10px 0 0;
+        width: 80%;
+    }
+}
+.chipco-login-form input, .chipco-login-form input:focus, .chipco-login-form .input-field label {
+    color:#f2f2f2;
+    float:left;
+    width:100%;
+    text-align:center;
+    font-size:18px;
+}
+.chipco-login-form input[type="text"], .chipco-login-form input[type="password"] {
+    border-bottom: 1px solid #f2f2f2;
+    color: white;
+    background: transparent;
+    margin: 10px auto;
+}
+.chipco-submit-btn {
+    border:2px solid #f2f2f2;
+    padding:15px;
+    text-align:center;
+    color:#FFF;
+    font-size: 17px;
+    background: transparent;
+    margin: 10px 0;
+}
+.chipco-submit-btn:hover {
+    text-decoration:none;
+    color:#FFF;
+}
+.whiteText {
+    color:#f2f2f2;
+}
+.whiteText:hover {
+    color:#f2f2f2;
+    text-decoration:none;
+}
+.chipco-login-form input[type="text"]:focus:not([readonly]) + label, .chipco-login-form input[type="password"]:focus:not([readonly]) + label {
+    color: #f2f2f2;
+}
+.font-39 {
+    font-size:39px;
+    line-height:0;
+}
+
+//LOCATION PAGE
+.location {
+    background: url(../../../../img/login-bg.png);
+    height: 100%;
+    background-size: contain;
+    ion-header-bar {
+        background: transparent;
+        .top-icon {
+            float: right;
+            color: white;
+            font-size: 30px;
+        }
+    }
+    ion-content {
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+}
+
+//DASHBOARD PAGE
+.dashboard {
+    background: url(../../../../img/dash_bg.jpg) no-repeat top left;
+    height: 100%;
+    ion-header-bar {
+        background: rgba(255, 255, 255, 0.5);
+        .top-icon {
+            float: right;
+            color: white;
+            font-size: 24px;
+        }
+        .user-icon {
+            height: 30px;
+            width: 30px;
+        }
+        h3 {
+            font-family: "BoutiqueScript";
+            color: white;
+            margin: 0;
+        }
+    }
+    ion-content {
+        padding: 100px 0 0;
+        .card {
+            width: 50%;
+            float: left;
+        }
+        .card-tree {
+            height: 100px;
+            width: 50%;
+        }
+    }
+}
+
