@@ -6946,17 +6946,17 @@ a.button {
     margin: 0; }
 
 .adoptTree ion-header-bar {
-  background: rgba(61, 194, 177, 0.5); }
+  background: rgba(255, 255, 255, 0.5); }
   .adoptTree ion-header-bar .top-icon {
     float: right;
-    color: white;
+    color: black;
     font-size: 24px; }
   .adoptTree ion-header-bar .user-icon {
     height: 30px;
     width: 30px; }
   .adoptTree ion-header-bar h3 {
     font-family: "BoutiqueScript";
-    color: white;
+    color: black;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
