@@ -9171,11 +9171,15 @@ a.button {
     padding: 0 30px;
     background-color: #8BE5D4;
     height: 100%; }
+    .editTreeProfile .editTreeForm input {
+      width: 100%; }
     .editTreeProfile .editTreeForm input[type="text"] {
+      border: none;
       border-bottom: 1px solid #f2f2f2;
       color: white;
       background: transparent;
-      margin: 10px auto; }
+      margin: 10px auto;
+      padding: 10px 0; }
 
 /*!
   Ionicons, v2.0.1
