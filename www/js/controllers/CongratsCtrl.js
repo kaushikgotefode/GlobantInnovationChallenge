@@ -10,7 +10,7 @@
 		 *
 		*/
     $scope.editTreeProfile = function() {
-  		// $state.go()
+  		$state.go("app.treeedit");
   	};
 
 	}]);
