@@ -6925,6 +6925,10 @@ a.button {
       height: 450px; }
       .congrats ion-content .slider .tree-img {
         height: 66%; }
+  .congrats .btn-tree {
+    position: absolute;
+    bottom: 0;
+    margin: 0; }
 
 .location {
   background: url(../../../../img/login-bg.png);
@@ -6943,7 +6947,9 @@ a.button {
   .location .btn-tree {
     position: absolute;
     bottom: 0;
-    margin: 0; }
+    margin: 0;
+    background: white;
+    color: #3dc2b1; }
 
 .adoptTree ion-header-bar {
   background: rgba(255, 255, 255, 0.5); }
@@ -7029,7 +7035,12 @@ a.button {
             margin: 0;
             line-height: 50px; }
     .dashboard ion-content .card-wrapper {
-      background: #f3f3f3; }
+      background: #f3f3f3;
+      padding: 20px 10px; }
+      .dashboard ion-content .card-wrapper .card-tree {
+        background: white;
+        margin: 2.5%;
+        width: 44%; }
 
 /*!
   Ionicons, v2.0.1
