@@ -9045,11 +9045,13 @@ a.button {
       font-size: 16px;
       width: 200px; }
   .adoptTree ion-content {
-    padding: 30px 0 0; }
+    padding: 20px 0 0; }
     .adoptTree ion-content .slider {
-      height: 450px; }
+      height: 500px; }
       .adoptTree ion-content .slider .tree-img {
-        height: 66%; }
+        height: 80%; }
+      .adoptTree ion-content .slider .slider-pager .slider-pager-page {
+        font-size: 8px; }
   .adoptTree .btn-tree {
     position: absolute;
     bottom: 0;
@@ -9077,7 +9079,7 @@ a.button {
       font-size: 16px;
       width: 200px; }
   .dashboard ion-content {
-    padding: 180px 0 0; }
+    padding: 165px 0 0; }
     .dashboard ion-content .top-row {
       position: relative;
       background: white;
@@ -9132,13 +9134,12 @@ a.button {
             background: purple; }
     .dashboard ion-content .card-wrapper {
       background: #f3f3f3;
-      padding: 10px; }
+      padding: 0; }
       .dashboard ion-content .card-wrapper .card-tree {
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
         background: white;
         text-transform: uppercase;
-        margin: 10px 0;
-        position: relative; }
+        margin: 5px 0; }
         .dashboard ion-content .card-wrapper .card-tree p {
           padding: 5px;
           text-align: center;
@@ -9147,7 +9148,9 @@ a.button {
           font-size: 16px; }
         .dashboard ion-content .card-wrapper .card-tree img {
           width: 100%;
-          margin: 0; }
+          margin: 0 0 -5px 0; }
+        .dashboard ion-content .card-wrapper .card-tree.mytree p {
+          background: rgba(61, 194, 177, 0.75); }
 
 .editTreeProfile {
   background-color: #8BE5D4;

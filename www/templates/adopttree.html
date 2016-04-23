@@ -14,9 +14,8 @@
         <ion-slide-box on-slide-changed="slideHasChanged($index)">
             <ion-slide ng-repeat="tree in treeList">
                 <img ng-src="{{tree.image}}" class="tree-img">
-                <br />
-                <div class="whiteFont uppercaseFont">{{tree.location}}</div>
-                <div class="whiteFont">{{tree.distance}} away </div>
+                <h4 class="whiteFont uppercaseFont">{{tree.location}}</h4>
+                <h5 class="whiteFont">{{tree.distance}} away</h5>
             </ion-slide>
         </ion-slide-box>
     </ion-content>
