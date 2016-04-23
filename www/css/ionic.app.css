@@ -9020,8 +9020,9 @@ a.button {
     position: absolute;
     bottom: 0;
     margin: 0;
-    background: rgba(255, 255, 255, 0.9);
-    color: #3dc2b1; }
+    background: #3dc2b1 !important;
+    color: white !important;
+    text-transform: uppercase; }
 
 .adoptTree {
   position: relative;
