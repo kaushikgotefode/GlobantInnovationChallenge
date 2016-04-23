@@ -6854,6 +6854,11 @@ a.button {
 :-ms-input-placeholder {
   color: white; }
 
+@font-face {
+  font-family: 'BoutiqueScript';
+  src: url("../../fonts/BoutiqueScript.otf"), url("../../fonts/BoutiqueScript.ttf");
+  font-style: normal; }
+
 .chipco-login-form {
   background: url(../../../../img/login-bg.png) no-repeat 0 0;
   -moz-background-size: 100% 100%;
@@ -6905,10 +6910,6 @@ a.button {
   font-size: 39px;
   line-height: 0; }
 
-.adopttree {
-  background: url(../../../../img/adopt_bg.png);
-  color: white; }
-
 .location {
   background: url(../../../../img/login-bg.png);
   height: 100%;
@@ -6922,6 +6923,31 @@ a.button {
   .location ion-content {
     text-align: center; }
     .location ion-content img {
+      width: 50%; }
+
+.dashboard {
+  background: url(../../../../img/dash_bg.jpg) no-repeat top left;
+  height: 100%; }
+  .dashboard ion-header-bar {
+    background: rgba(255, 255, 255, 0.5); }
+    .dashboard ion-header-bar .top-icon {
+      float: right;
+      color: white;
+      font-size: 24px; }
+    .dashboard ion-header-bar .user-icon {
+      height: 30px;
+      width: 30px; }
+    .dashboard ion-header-bar h3 {
+      font-family: "BoutiqueScript";
+      color: white;
+      margin: 0; }
+  .dashboard ion-content {
+    padding: 100px 0 0; }
+    .dashboard ion-content .card {
+      width: 50%;
+      float: left; }
+    .dashboard ion-content .card-tree {
+      height: 100px;
       width: 50%; }
 
 /*!
