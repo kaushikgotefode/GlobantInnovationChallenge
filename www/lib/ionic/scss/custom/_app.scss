@@ -16,6 +16,11 @@
     src: url('../../fonts/BoutiqueScript.otf'), url('../../fonts/BoutiqueScript.ttf');
     font-style: normal;
 }
+.btn-tree {
+    background: rgba(61, 194, 177, 1);
+    color: white;
+    text-transform: uppercase;
+}
 
 //LOGIN PAGE
 .chipco-login-form {
@@ -69,6 +74,39 @@
 .font-39 {
     font-size:39px;
     line-height:0;
+}
+
+//ADOPT TREE PAGE
+.adoptTree {
+    background: url('../../../../img/adopt_bg.png') no-repeat center;
+    height: 100%;
+    position: relative;
+    ion-header-bar {
+        background: rgba(61, 194, 177, 0.5);
+        .top-icon {
+            float: right;
+            color: white;
+            font-size: 24px;
+        }
+        .user-icon {
+            height: 30px;
+            width: 30px;
+        }
+        h3 {
+            font-family: "BoutiqueScript";
+            color: white;
+            margin: 0;
+            text-align: center;
+        }
+    }
+    ion-content {
+        padding: 30px 0 0;
+    }
+    .btn-tree {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+    }
 }
 
 //LOCATION PAGE

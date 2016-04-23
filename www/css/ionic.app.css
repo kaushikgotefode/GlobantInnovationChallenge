@@ -6859,6 +6859,11 @@ a.button {
   src: url("../../fonts/BoutiqueScript.otf"), url("../../fonts/BoutiqueScript.ttf");
   font-style: normal; }
 
+.btn-tree {
+  background: #3dc2b1;
+  color: white;
+  text-transform: uppercase; }
+
 .chipco-login-form {
   background: url(../../../../img/login-bg.png) no-repeat 0 0;
   -moz-background-size: 100% 100%;
@@ -6909,6 +6914,31 @@ a.button {
 .font-39 {
   font-size: 39px;
   line-height: 0; }
+
+.adoptTree {
+  background: url("../../../../img/adopt_bg.png") no-repeat center;
+  height: 100%;
+  position: relative; }
+  .adoptTree ion-header-bar {
+    background: rgba(61, 194, 177, 0.5); }
+    .adoptTree ion-header-bar .top-icon {
+      float: right;
+      color: white;
+      font-size: 24px; }
+    .adoptTree ion-header-bar .user-icon {
+      height: 30px;
+      width: 30px; }
+    .adoptTree ion-header-bar h3 {
+      font-family: "BoutiqueScript";
+      color: white;
+      margin: 0;
+      text-align: center; }
+  .adoptTree ion-content {
+    padding: 30px 0 0; }
+  .adoptTree .btn-tree {
+    position: absolute;
+    bottom: 0;
+    margin: 0; }
 
 .location {
   background: url(../../../../img/login-bg.png);
