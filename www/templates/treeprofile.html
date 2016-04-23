@@ -1,6 +1,6 @@
 <ion-header-bar align-title="left" class="bar bar-header">
     <div class="col s2">
-        <img src="../img/user.png" class="user-icon" alt="">
+        <img class="hdr-treePfl-img"ng-src="{{userDtl.image}}" class="user-icon" alt="">
     </div>
     <div class="col s8">
         <h5>Neemo The Tree</h5>
@@ -12,10 +12,9 @@
 <ion-content>
     <div class="treeProHd">
         <div style="float:left; width:50%; position:relative; top:72%; padding-left:20px;">
-            <h4 class="whiteText">Neemo The Tree</h4>
-            <h5 class="whiteText">Adopted by Muktai Joshi</h5></div>
-        <div style="float:left; width:50%; position:relative; top:72%; padding-right:20px;"><p class="whiteText" style="float:right">0.7 km Away</p></div>
-
+            <h4 class="whiteText">{{selectedTree.name}}</h4>
+            <h5 class="whiteText">Adopted by {{selectedTree.adoptedBy}}</h5></div>
+        <div style="float:left; width:50%; position:relative; top:72%; padding-right:20px;"><p class="whiteText" style="float:right">{{selectedTree.distance}} Away</p></div>
     </div>
 
     <div class="tfper text-center border-right active"><h4><i class="ion-leaf"></i></h4><h6>Info</h6><br /></div><div class="tfper text-center border-right"><h4><i class="ion-waterdrop"></i></h4><h6>Moisture</h6><br /></div><div class="tfper text-center border-right"><h4><i class="ion-erlenmeyer-flask"></i></h4><h6>Fertilizer</h6><br /></div><div class="tfper text-center"><h4><i class="ion-umbrella"></i></h4><h6>Temperature</h6><br /></div>
@@ -26,6 +25,5 @@
         <h4 style="margin:10% auto 0 auto; border:1px solid #09F; padding:10px; width:60px;">85%</h4>
         <h5 style="text-align:center;">Soil Moinsture</h5>
         <h6 style="text-align:center; color:#CCC;"><i>Thank you for keeping me moist!</i></h6>
-
     </div>
 </ion-content>

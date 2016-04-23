@@ -17,7 +17,7 @@
         <div class="row top-row">
             <div class="col-25">
                 <b>{{currntUsr.noOfAdoptedTrees}}</b>
-                <p>trees</p>
+                <p> my trees</p>
             </div>
             <div class="col-40">
                 <div class="points">
@@ -38,30 +38,16 @@
         </div>
 
         <div class="card-wrapper">
-            <div class="card-tree" ui-sref="app.treeprofile">
-                <p>Tree Name</p>
-                <img src="../img/dash1.jpg" alt="">
+            <div class="card-tree" ng-repeat="tree in currntUsr.adoptedTrees" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
+                <p>{{tree.name}}</p>
+                <img ng-src="{{tree.image}}" alt="">
             </div>
-            <div class="card-tree" ui-sref="app.treeprofile">
-                <p>Tree Name</p>
-                <img src="../img/dash2.jpg" alt="">
+
+           <div class="card-tree" ng-repeat="tree in treeList" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
+                <p>{{tree.name}}</p>
+                <img ng-src="{{tree.image}}" alt="">
             </div>
-            <div class="card-tree" ui-sref="app.treeprofile">
-                <p>Tree Name</p>
-                <img src="../img/dash3.jpg" alt="">
-            </div>
-            <div class="card-tree" ui-sref="app.treeprofile">
-                <p>Tree Name</p>
-                <img src="../img/dash4.jpg" alt="">
-            </div>
-            <div class="card-tree" ui-sref="app.treeprofile">
-                <p>Tree Name</p>
-                <img src="../img/dash5.jpg" alt="">
-            </div>
-            <div class="card-tree" ui-sref="app.treeprofile">
-                <p>Tree Name</p>
-                <img src="../img/dash6.jpg" alt="">
-            </div>
+            
             <div style="clear:both"></div>
         </div>
     </ion-content>
