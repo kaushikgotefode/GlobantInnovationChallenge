@@ -4,15 +4,15 @@
             "name": "Kaushik Gotefode",
             "email": "kaushik@chip.co",
             "password": "1234",
-            "image":"./img/profile1.jpg",
+            "image": "./img/profile1.jpg",
             "gender": "male",
-            "occupation":"UI web Developer",
+            "occupation": "UI web Developer",
             "age": 26,
             "city": "Bangalore",
             "address": "HSR layout,Bangalore",
-            "noOfAdoptedTrees":"5",
-            "VGC":"500",
-            "emotrees":"33",
+            "noOfAdoptedTrees": "5",
+            "VGC": "500",
+            "emotrees": "33",
             "adoptedTrees": [{
                 "id": 1,
                 "name": "Neem",
@@ -27,7 +27,8 @@
                 "dob": "",
                 "userID": 1,
                 "flag": "",
-                "adoptedDate": ""
+                "adoptedDate": "",
+                "adoptedBy": "Kaushik"
             }, {
                 "id": 2,
                 "name": "Mango",
@@ -42,7 +43,8 @@
                 "dob": "",
                 "userID": 1,
                 "flag": "",
-                "adoptedDate": ""
+                "adoptedDate": "",
+                "adoptedBy": "Kaushik"
             }, {
                 "id": 3,
                 "name": "Sandalwood",
@@ -57,7 +59,8 @@
                 "dob": "",
                 "userID": 1,
                 "flag": "",
-                "adoptedDate": ""
+                "adoptedDate": "",
+                "adoptedBy": "Kaushik"
             }, {
                 "id": 4,
                 "name": "Sal",
@@ -72,7 +75,8 @@
                 "dob": "",
                 "userID": 1,
                 "flag": "",
-                "adoptedDate": ""
+                "adoptedDate": "",
+                "adoptedBy": "Kaushik"
             }, {
                 "id": 5,
                 "name": "sacred fig",
@@ -87,50 +91,51 @@
                 "dob": "",
                 "userID": 1,
                 "flag": "",
-                "adoptedDate": ""
+                "adoptedDate": "",
+                "adoptedBy": "Kaushik"
             }]
         }, {
             "id": 2,
             "name": "Avnesh Shakya",
             "email": "avnesh@chip.co",
-            "image":"./img/profile2.jpg",
+            "image": "./img/profile2.jpg",
             "password": "1234",
             "gender": "male",
-            "occupation":"UI web Developer",
+            "occupation": "UI web Developer",
             "age": 26,
             "city": "Bangalore",
             "address": "HSR layout,Bangalore",
-            "noOfAdoptedTrees":"3",
-            "VGC":"400",
-            "emotrees":"23"
+            "noOfAdoptedTrees": "3",
+            "VGC": "400",
+            "emotrees": "23"
         }, {
             "id": 3,
             "name": "Prakash T",
             "email": "prakash@chip.co",
-            "image":"./img/profile2.jpg",
+            "image": "./img/profile2.jpg",
             "password": "1234",
             "gender": "male",
-            "occupation":"UI web Developer",
+            "occupation": "UI web Developer",
             "age": 30,
             "city": "Bangalore",
             "address": "HSR layout,Bangalore",
-            "noOfAdoptedTrees":"6",
-            "VGC":"700",
-            "emotrees":"39"
+            "noOfAdoptedTrees": "6",
+            "VGC": "700",
+            "emotrees": "39"
         }, {
             "id": 4,
             "name": "Suresh",
             "email": "suresh@chip.co",
-            "image":"./img/profile2.jpg",
+            "image": "./img/profile2.jpg",
             "password": "1234",
             "gender": "male",
-            "occupation":"UI web Developer",
+            "occupation": "UI web Developer",
             "age": 30,
             "city": "Bangalore",
             "address": "HSR layout,Bangalore",
-            "noOfAdoptedTrees":"4",
-            "VGC":"350",
-            "emotrees":"23"
+            "noOfAdoptedTrees": "4",
+            "VGC": "350",
+            "emotrees": "23"
         }
 
     ]
