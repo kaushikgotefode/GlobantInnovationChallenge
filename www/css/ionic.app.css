@@ -6925,7 +6925,22 @@ a.button {
       height: 450px; }
       .congrats ion-content .slider .tree-img {
         height: 66%; }
-  .congrats .btn-tree {
+
+.location {
+  background: url(../../../../img/login-bg.png);
+  height: 100%;
+  background-size: contain; }
+  .location ion-header-bar {
+    background: transparent; }
+    .location ion-header-bar .top-icon {
+      float: right;
+      color: white;
+      font-size: 30px; }
+  .location ion-content {
+    text-align: center; }
+    .location ion-content img {
+      width: 50%; }
+  .location .btn-tree {
     position: absolute;
     bottom: 0;
     margin: 0; }
@@ -6947,21 +6962,6 @@ a.button {
     text-transform: uppercase;
     font-size: 22px;
     width: 200px; }
-
-.location {
-  background: url(../../../../img/login-bg.png);
-  height: 100%;
-  background-size: contain; }
-  .location ion-header-bar {
-    background: transparent; }
-    .location ion-header-bar .top-icon {
-      float: right;
-      color: white;
-      font-size: 30px; }
-  .location ion-content {
-    text-align: center; }
-    .location ion-content img {
-      width: 50%; }
 
 .dashboard {
   background: url(../../../../img/dash_bg.jpg) no-repeat top left;
