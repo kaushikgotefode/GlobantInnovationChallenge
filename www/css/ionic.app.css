@@ -6915,37 +6915,38 @@ a.button {
   font-size: 39px;
   line-height: 0; }
 
-.adoptTree {
+.congrats {
   background: url("../../../../img/adopt_bg.png") no-repeat center;
   height: 100%;
   position: relative; }
-  .adoptTree ion-header-bar {
-    background: rgba(61, 194, 177, 0.5); }
-    .adoptTree ion-header-bar .top-icon {
-      float: right;
-      color: white;
-      font-size: 24px; }
-    .adoptTree ion-header-bar .user-icon {
-      height: 30px;
-      width: 30px; }
-    .adoptTree ion-header-bar h3 {
-      font-family: "BoutiqueScript";
-      color: white;
-      margin: 0;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 22px;
-      width: 200px; }
-  .adoptTree ion-content {
+  .congrats ion-content {
     padding: 30px 0 0; }
-    .adoptTree ion-content .slider {
+    .congrats ion-content .slider {
       height: 450px; }
-      .adoptTree ion-content .slider .tree-img {
+      .congrats ion-content .slider .tree-img {
         height: 66%; }
-  .adoptTree .btn-tree {
+  .congrats .btn-tree {
     position: absolute;
     bottom: 0;
     margin: 0; }
+
+.adoptTree ion-header-bar {
+  background: rgba(61, 194, 177, 0.5); }
+  .adoptTree ion-header-bar .top-icon {
+    float: right;
+    color: white;
+    font-size: 24px; }
+  .adoptTree ion-header-bar .user-icon {
+    height: 30px;
+    width: 30px; }
+  .adoptTree ion-header-bar h3 {
+    font-family: "BoutiqueScript";
+    color: white;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    width: 200px; }
 
 .location {
   background: url(../../../../img/login-bg.png);
@@ -9992,4 +9993,3 @@ a.button {
 
 .ion-xbox:before {
   content: ""; }
-.footerBtn{ background-color:#3dc2b1; color:#fff; font-size:14px;}
