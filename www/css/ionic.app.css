@@ -6863,6 +6863,14 @@ a.button {
   background: #3dc2b1;
   color: white;
   text-transform: uppercase; }
+  .btn-tree:focus {
+    background: #3dc2b1;
+    color: white; }
+  .btn-tree.activated {
+    background: #3dc2b1;
+    color: white; }
+  .btn-tree:hover {
+    color: white; }
 
 .chipco-login-form {
   background: url(../../../../img/login-bg.png) no-repeat 0 0;
@@ -6919,6 +6927,12 @@ a.button {
   background: url("../../../../img/adopt_bg.png") no-repeat center;
   height: 100%;
   position: relative; }
+  .congrats ion-header-bar {
+    background: transparent; }
+    .congrats ion-header-bar .top-icon {
+      float: right;
+      color: black;
+      font-size: 32px; }
   .congrats ion-content {
     padding: 30px 0 0; }
     .congrats ion-content .slider {
@@ -6951,23 +6965,36 @@ a.button {
     background: white;
     color: #3dc2b1; }
 
-.adoptTree ion-header-bar {
-  background: rgba(255, 255, 255, 0.5); }
-  .adoptTree ion-header-bar .top-icon {
-    float: right;
-    color: black;
-    font-size: 24px; }
-  .adoptTree ion-header-bar .user-icon {
-    height: 30px;
-    width: 30px; }
-  .adoptTree ion-header-bar h3 {
-    font-family: "BoutiqueScript";
-    color: black;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    width: 200px; }
+.adoptTree {
+  position: relative;
+  height: 100%; }
+  .adoptTree ion-header-bar {
+    background: rgba(61, 194, 177, 0.5); }
+    .adoptTree ion-header-bar .top-icon {
+      float: right;
+      color: white;
+      font-size: 24px; }
+    .adoptTree ion-header-bar .user-icon {
+      height: 30px;
+      width: 30px; }
+    .adoptTree ion-header-bar h3 {
+      font-family: "BoutiqueScript";
+      color: white;
+      margin: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 22px;
+      width: 200px; }
+  .adoptTree ion-content {
+    padding: 30px 0 0; }
+    .adoptTree ion-content .slider {
+      height: 450px; }
+      .adoptTree ion-content .slider .tree-img {
+        height: 66%; }
+  .adoptTree .btn-tree {
+    position: absolute;
+    bottom: 0;
+    margin: 0; }
 
 .dashboard {
   background: url(../../../../img/dash_bg.jpg) no-repeat top left;
