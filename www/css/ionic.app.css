@@ -6874,7 +6874,9 @@ a.button {
 
 .chipco-login-form input[type="text"], .chipco-login-form input[type="password"] {
   border-bottom: 1px solid #f2f2f2;
-  color: white; }
+  color: white;
+  background: transparent;
+  margin: 10px auto; }
 
 .chipco-submit-btn {
   border: 2px solid #f2f2f2;
@@ -6882,7 +6884,8 @@ a.button {
   text-align: center;
   color: #FFF;
   font-size: 17px;
-  background: transparent; }
+  background: transparent;
+  margin: 10px 0; }
 
 .chipco-submit-btn:hover {
   text-decoration: none;
@@ -9845,7 +9848,6 @@ a.button {
 .ion-upload:before {
   content: ""; }
 
-<<<<<<< 70ddce38001998a02087d987e22bab0e8983b629
 .ion-usb:before {
   content: ""; }
 
@@ -9857,21 +9859,6 @@ a.button {
 
 .ion-volume-low:before {
   content: ""; }
-
-.chipco-login-form ::-webkit-input-placeholder {
-  color: white; }
-
-.chipco-login-form :-moz-placeholder {
-  /* Firefox 18- */
-  color: white; }
-
-.chipco-login-form ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: white; }
-
-.chipco-login-form :-ms-input-placeholder {
-  color: white; }
-
 
 .ion-volume-medium:before {
   content: ""; }
@@ -9891,7 +9878,6 @@ a.button {
 .ion-wineglass:before {
   content: ""; }
 
-
 .ion-woman:before {
   content: ""; }
 
@@ -9900,8 +9886,3 @@ a.button {
 
 .ion-xbox:before {
   content: ""; }
-
-.font-26 {
-  font-size: 26px !important;
-  line-height: 0; }
-
