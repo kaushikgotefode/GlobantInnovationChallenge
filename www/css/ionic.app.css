@@ -6863,6 +6863,14 @@ a.button {
   background: #3dc2b1;
   color: white;
   text-transform: uppercase; }
+  .btn-tree:focus {
+    background: #3dc2b1;
+    color: white; }
+  .btn-tree.activated {
+    background: #3dc2b1;
+    color: white; }
+  .btn-tree:hover {
+    color: white; }
 
 .chipco-login-form {
   background: url(../../../../img/login-bg.png) no-repeat 0 0;
