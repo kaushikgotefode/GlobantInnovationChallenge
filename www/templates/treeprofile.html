@@ -1,31 +1,35 @@
-<ion-header-bar align-title="left" class="bar bar-header">
-
-        <div class="col s2">
-            <img class="hdr-treePfl-img"ng-src="{{userDtl.image}}" class="user-icon" alt="">
+<section class="treeedit">
+    <ion-header-bar align-title="left">
+        <div class="col-10">
+            <img class="hdr-login-img" ng-src="{{userDtl.image}}" class="user-icon" alt="" ui-sref="app.profile">
         </div>
-        <div class="col s8">
-            <h5>{{selectedTree.name}}</h5>
+        <div class="col-80">
+            <h3>Neemo The Tree</h3>
         </div>
-        <div class="col s2">
-            <a class="ion-heart top-icon" data-pack="ios" data-tags="forward" ui-sref="app.location"></a>
+        <div class="col-10">
+            <a class="ion-heart top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></a>
         </div>
     </ion-header-bar>
+
     <ion-content>
         <div class="treeProHd">
+            <div style="float:left; width:50%; position:relative; top:72%; padding-left:20px;">
+                <h4 class="">{{selectedTree.name}}</h4>
+                <h5 class="">Adopted by {{selectedTree.adoptedBy}}</h5></div>
+            <div style="float:left; width:50%; position:relative; top:72%; padding-right:20px;"><p class="whiteText" style="float:right">{{selectedTree.distance}} Away</p></div>
+        </div>
 
-        <div style="float:left; width:50%; position:relative; top:72%; padding-left:20px;">
-            <h4 class="whiteText">{{selectedTree.name}}</h4>
-            <h5 class="whiteText">Adopted by {{selectedTree.adoptedBy}}</h5></div>
-        <div style="float:left; width:50%; position:relative; top:72%; padding-right:20px;"><p class="whiteText" style="float:right">{{selectedTree.distance}} Away</p></div>
-    </div>
+        <div class="tfper text-center border-right"><h4><i class="ion-leaf"></i></h4><h6>Info</h6></div>
+        <div class="tfper text-center border-right active"><h4><i class="ion-waterdrop"></i></h4><h6>Moisture</h6></div>
+        <div class="tfper text-center border-right"><h4><i class="ion-erlenmeyer-flask"></i></h4><h6>Fertilizer</h6></div>
+        <div class="tfper text-center"><h4><i class="ion-umbrella"></i></h4><h6>Temperature</h6></div>
 
-    <div class="tfper text-center border-right active"><h4><i class="ion-leaf"></i></h4><h6>Info</h6><br /></div><div class="tfper text-center border-right"><h4><i class="ion-waterdrop"></i></h4><h6>Moisture</h6><br /></div><div class="tfper text-center border-right"><h4><i class="ion-erlenmeyer-flask"></i></h4><h6>Fertilizer</h6><br /></div><div class="tfper text-center"><h4><i class="ion-umbrella"></i></h4><h6>Temperature</h6><br /></div>
-
-    <div class="mood">
-        <img style="position:absolute; top:685px; right:17px;" src="../img/moodePer.png" />
-        <img style="display:flex; width:100%;" src="/img/happy-mood.png">
-        <h4 style="margin:10% auto 0 auto; border:1px solid #09F; padding:10px; width:60px;">85%</h4>
-        <h5 style="text-align:center;">Soil Moinsture</h5>
-        <h6 style="text-align:center; color:#CCC;"><i>Thank you for keeping me moist!</i></h6>
-    </div>
-</ion-content>
+        <div class="mood">
+            <img style="display:flex; width:100%;" src="/img/happy-mood.png">
+            <h4 style="margin:10% auto 0 auto; border:1px solid #09F; padding:10px; width:60px;">85%</h4>
+            <h5 style="text-align:center;">Soil Moinsture</h5>
+            <h4 style="text-align:center;">Thank you for keeping me moist!</h4>
+        </div>
+    </ion-content>
+    <img style="position:absolute; bottom: 10px; right:10px;" src="../img/moodePer.png" />
+</section>

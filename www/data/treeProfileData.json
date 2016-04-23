@@ -14,7 +14,10 @@
             "userID": 1,
             "flag": "",
             "adoptedDate": "",
-            "adoptedBy":"Prakash"
+            "adoptedBy":"Prakash",
+            "botanincal-info": "Azadirachta Indica",
+            "height": "30",
+            "branchCircum": "30"
             
         },
         {
@@ -32,7 +35,10 @@
             "userID": 1,
             "flag": "",
             "adoptedDate": "",
-            "adoptedBy":"Prakash"
+            "adoptedBy":"Prakash",
+            "botanincal-info": "Mangifera foetida",
+            "height": "40",
+            "branchCircum": "38"
         },
         {
             "id": 13,
@@ -42,14 +48,17 @@
             "distance":"2 km",
             "location": "HSR layout, Bangalore",
             "description": "The height of the evergreen tree is between 4 and 9 metres. They may live to one hundred years of age. The tree is variable in habit, usually upright to sprawling, and may intertwine with other species. The plant parasitises the roots of other tree species, with a haustorium adaptation on its own roots, but without major detriment to its hosts. An individual will form a non-obligate relationship with a number of other plants. Up to 300 species (including its own) can host the tree's development - supplying macronutrients phosphorus, nitrogen and potassium, and shade - especially during early phases of development. It may propagate itself through wood suckering during its early development, establishing small stands. The reddish or brown bark can be almost black and is smooth in young trees, becoming cracked with a red reveal. The heartwood is pale green to white as the common name indicates. The leaves are thin, opposite and ovate to lanceolate in shape. Glabrous surface is shiny and bright green, with a glaucous pale reverse. Fruit is produced after three years, viable seeds after five. These seeds are distributed by birds.",
-            "age": 26,
+            "age": 90,
             "oxygenLevel": "",
             "energyLevel": "",
             "dob": "",
             "userID": 1,
             "flag": "",
             "adoptedDate": "",
-            "adoptedBy":"Kaushik"
+            "adoptedBy":"Kaushik",
+            "botanincal-info": "Santalum album",
+            "height": "5m",
+            "branchCircum": "38"
         },
         {
             "id": 14,
@@ -66,7 +75,10 @@
             "userID": 1,
             "flag": "",
             "adoptedDate": "",
-            "adoptedBy":"Kaushik"
+            "adoptedBy":"Kaushik",
+            "botanincal-info": "Santalum album",
+            "height": "5m",
+            "branchCircum": "38"
         },
         {
             "id": 15,
@@ -83,7 +95,10 @@
             "userID": 1,
             "flag": "",
             "adoptedDate": "",
-            "adoptedBy":"avnesh"
+            "adoptedBy":"avnesh",
+            "botanincal-info": "Santalum album",
+            "height": "40",
+            "branchCircum": "90"
         }
     ]
 }
