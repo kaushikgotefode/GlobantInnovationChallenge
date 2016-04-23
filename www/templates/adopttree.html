@@ -12,7 +12,7 @@
     <ion-content class="textCenter">
         <h5 class="whiteFont uppercaseFont">Select your tree</h5>
         <ion-slide-box on-slide-changed="slideHasChanged($index)" class="height410">
-            <ion-slide ng-repeat="tree in treeList">
+            <ion-slide ng-repeat="tree in treeList" active-slide="tree">
                 <div><img ng-src="{{tree.image}}"></div>
                 <div class="whiteFont uppercaseFont">{{tree.location}}</div>
                 <div class="whiteFont">{{tree.distance}} away </div>
