@@ -9368,7 +9368,7 @@ a.button {
       height: 30px;
       width: 30px; }
     .adoptTree ion-header-bar h3 {
-      font-family: "BoutiqueScript";
+        font-family: "boutique_scriptregular";
       color: white;
       margin: 0;
       text-align: center;
@@ -9401,7 +9401,7 @@ a.button {
       height: 30px;
       width: 30px; }
     .dashboard ion-header-bar h3 {
-      font-family: "BoutiqueScript";
+        font-family: "boutique_scriptregular";
       color: white;
       margin: 0;
       text-align: center;

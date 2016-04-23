@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'boutique_scriptregular';
+    src: url('../font/boutiquescript-webfont.eot');
+    src: url('../font/boutiquescript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/boutiquescript-webfont.woff2') format('woff2'),
+         url('../font/boutiquescript-webfont.woff') format('woff'),
+         url('../font/boutiquescript-webfont.ttf') format('truetype'),
+         url('../font/boutiquescript-webfont.svg#boutique_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .adoptTree,
 .congrats {
     background: url('../img/adopt_bg.png') no-repeat center;
