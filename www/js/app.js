@@ -84,6 +84,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'EmotreeCtrl',
     templateUrl: 'templates/emotree.html'
   })
+  
+  .state('app.treeprofile', {
+      url: '/treeprofile',
+      controller: 'TreeProfileCtrl',
+      templateUrl: 'templates/treeprofile.html'
+  })
 
   .state('app.search', {
     url: '/search',
