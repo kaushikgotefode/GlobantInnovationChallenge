@@ -1,20 +1,84 @@
-.adoptTree, .congrats {
+.adoptTree,
+.congrats {
     background: url('../img/adopt_bg.png') no-repeat center;
     height: 100%;
 }
+
 .textCenter {
     text-align: center;
 }
+
 .height410 {
     height: 410px;
 }
+
 .whiteFont {
     color: white;
 }
-.uppercaseFont {
+
+
+/*userProfile css*/
+
+.uppercaseFontUser {
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 22px;
+    color: white;
 }
+
+.userPic {
+    width: 180px;
+    height: 180px;
+    padding-top: 80px;
+    margin: 0px auto;
+}
+
+.userPic img {
+    border-radius: 90px;
+    width: inherit;
+    height: inherit;
+}
+
+.userInfo {
+    padding-top: 120px;
+}
+
+.userDetail {
+    color: white;
+    text-align: center;
+    top:0px;
+}
+
+.userDetail span {
+    color: #DDD;
+    margin: 2px 5px;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.userDetail p {
+    font-size: 13px;
+    color: #DDD;
+    text-transform: uppercase;
+}
+
+.userstatus {
+    font-size: 22px;
+}
+
+.userDetail .row {
+    margin-top: 20px;
+}
+
+.userDetail .input-field button {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.userDetail a {
+    color: #ccc;
+}
+
 .main {
     height: auto;
     width: auto;
@@ -33,6 +97,7 @@
     overflow: auto;
     margin-top: 40%;
 }
+
 
 img.thumbnail {
     width: 85%;
@@ -67,6 +132,7 @@ img.thumbnail {
     border-radius: 50%;
     text-align: center;
     line-height: 25px;
+    font-weight: 400;
 }
 .ion-ios-close-empty:before {
     font-size: 27px;
