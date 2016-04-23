@@ -39,6 +39,12 @@ angular.module('starter.services', [])
     this.getSelectedTree = function() {
         return this.selectedTree
     }
+    this.setAdoptedTree = function(adoptedTree) {
+        return this.adoptedTree = adoptedTree
+    }
+    this.getAdoptedTree =function(){
+        return this.adoptedTree
+    }
 })
 
 

@@ -1,10 +1,12 @@
-(function(){
+(function() {
     'use strict';
 
-    angular.module('starter.controllers').controller('TreeeditCtrl', ['$scope', '$timeout', '$state', function($scope, $timeout, $state){
-			$scope.editTree = function(tree) {
-				console.log(tree);
-			};   	
+    angular.module('starter.controllers').controller('TreeeditCtrl', ['$scope', '$timeout', '$state','sharedService', function($scope, $timeout, $state,sharedService) {
+        $scope.tree = sharedService.getAdoptedTree();
+        $scope.editTree = function(tree) {
+        	localStorage.setItem("selectedTree", JSON.stringify(tree));
+        	$state.go("app.treeprofile", {id:tree.id});
+            };
 
     }]);
 })();
