@@ -12,11 +12,6 @@
     color: white;
 }
 
-@font-face {
-    font-family: 'BoutiqueScript';
-    src: url('../../fonts/BoutiqueScript.otf'), url('../../fonts/BoutiqueScript.ttf');
-    font-style: normal;
-}
 .btn-tree {
     background: rgba(61, 194, 177, 1);
     color: white;
@@ -180,13 +175,14 @@
             width: 30px;
         }
         h3 {
-            font-family: "BoutiqueScript";
+            //            font-family: 'Dancing Script', cursive;
             color: white;
             margin: 0;
             text-align: center;
             text-transform: uppercase;
-            font-size: 22px;
+            font-size: 16px;
             width: 200px;
+            //            font-weight: 700;
         }
     }
     ion-content {
@@ -223,13 +219,14 @@
             width: 30px;
         }
         h3 {
-            font-family: "BoutiqueScript";
+            // font-family: "boutique_scriptregular";
             color: white;
             margin: 0;
             text-align: center;
             text-transform: uppercase;
-            font-size: 22px;
+            font-size: 16px;
             width: 200px;
+            // font-weight: 700;
         }
     }
     ion-content {

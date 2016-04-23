@@ -8902,11 +8902,6 @@ a.button {
 :-ms-input-placeholder {
   color: white; }
 
-@font-face {
-  font-family: 'BoutiqueScript';
-  src: url("../../fonts/BoutiqueScript.otf"), url("../../fonts/BoutiqueScript.ttf");
-  font-style: normal; }
-
 .btn-tree {
   background: #3dc2b1;
   color: white;
@@ -9042,12 +9037,11 @@ a.button {
       height: 30px;
       width: 30px; }
     .adoptTree ion-header-bar h3 {
-      font-family: "BoutiqueScript";
       color: white;
       margin: 0;
       text-align: center;
       text-transform: uppercase;
-      font-size: 22px;
+      font-size: 16px;
       width: 200px; }
   .adoptTree ion-content {
     padding: 30px 0 0; }
@@ -9075,12 +9069,11 @@ a.button {
       height: 30px;
       width: 30px; }
     .dashboard ion-header-bar h3 {
-      font-family: "BoutiqueScript";
       color: white;
       margin: 0;
       text-align: center;
       text-transform: uppercase;
-      font-size: 22px;
+      font-size: 16px;
       width: 200px; }
   .dashboard ion-content {
     padding: 180px 0 0; }
