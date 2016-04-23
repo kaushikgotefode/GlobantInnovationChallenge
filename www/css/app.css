@@ -46,11 +46,11 @@
 .userDetail {
     color: white;
     text-align: center;
-    top:0px;
+    top: 0px;
 }
 
 .userDetail span {
-    color: white;
+    color: #DDD;
     margin: 2px 5px;
     font-size: 15px;
     display: inline-block;
@@ -71,12 +71,47 @@
 }
 
 .userDetail .input-field button {
-    font-size: 15px;
+    font-size: 10px;
     padding: 5px;
 }
 
 .userDetail a {
     color: #ccc;
+}
+
+.congratsThumb {
+    display: flex;
+    margin: 0% auto 25% auto;
+    width: 20%;
+    height: auto;
+    padding-top: 30%;
+}
+
+.hdr-login-img {
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.title.textCenter {
+    text-align: center !important;
+}
+
+.adoptTree .bar.bar-positive {
+    border-color: #fff;
+    background-color: rgba(204, 204, 204, 0.4);
+    background-image: none;
+    color: #fff;
+}
+
+.bar.bar-positive {
+    background: rgba(204, 204, 204, 0.58);
+}
+
+.bar-positive .button {
+    background-color: rgba(56, 126, 245, 0);
+    font-size: 30px;
+    color: #fff;
 }
 
 .main {
@@ -106,12 +141,12 @@
   .border-right{ border-right:1px solid #ccc;}
   .tfper.active{ border-bottom: 2px solid #f7071d;}
   .mood{ background-color:#f3f3f2; float:left; width:100%; height:330px;}
-
-
+  
 img.thumbnail {
     width: 85%;
     border-radius: 50%;
 }
+
 
 /*.image:before {
     content: "";
@@ -130,11 +165,11 @@ img.thumbnail {
 }
 
 .emoNum {
-    position:absolute;
+    position: absolute;
     color: white;
     border-color: white;
-    top:0;
-    right:15px;
+    top: 0;
+    right: 15px;
     height: 26px;
     width: 26px;
     background: #F00;
@@ -143,6 +178,7 @@ img.thumbnail {
     line-height: 25px;
     font-weight: 400;
 }
+
 .ion-ios-close-empty:before {
     font-size: 27px;
     line-height: 32px;
