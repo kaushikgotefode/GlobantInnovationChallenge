@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
 @import
-  // Ionicons
-  "ionicons/ionicons.scss",
 
   // Variables
   "mixins",
@@ -56,4 +54,7 @@
   //Custom Styles
   "custom/adopt",
   "custom/override",
-  "custom/login";
+  "custom/login",
+
+  // Ionicons
+  "ionicons/ionicons.scss";
