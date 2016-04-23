@@ -51,14 +51,15 @@
     color:#f2f2f2;
     float:left;
     width:100%;
-    text-align:center;
     font-size:18px;
 }
 .chipco-login-form input[type="text"], .chipco-login-form input[type="password"] {
+    border: none;
     border-bottom: 1px solid #f2f2f2;
     color: white;
     background: transparent;
     margin: 10px auto;
+    padding: 10px 0;
 }
 .chipco-submit-btn {
     border:2px solid #f2f2f2;
@@ -317,7 +318,7 @@
                 img {
                     width: 100%;
                     margin: 0;
-                    
+
                 }
             }
         }
