@@ -9845,6 +9845,7 @@ a.button {
 .ion-upload:before {
   content: ""; }
 
+<<<<<<< 70ddce38001998a02087d987e22bab0e8983b629
 .ion-usb:before {
   content: ""; }
 
@@ -9856,6 +9857,21 @@ a.button {
 
 .ion-volume-low:before {
   content: ""; }
+
+.chipco-login-form ::-webkit-input-placeholder {
+  color: white; }
+
+.chipco-login-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: white; }
+
+.chipco-login-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white; }
+
+.chipco-login-form :-ms-input-placeholder {
+  color: white; }
+
 
 .ion-volume-medium:before {
   content: ""; }
@@ -9875,6 +9891,7 @@ a.button {
 .ion-wineglass:before {
   content: ""; }
 
+
 .ion-woman:before {
   content: ""; }
 
@@ -9883,3 +9900,8 @@ a.button {
 
 .ion-xbox:before {
   content: ""; }
+
+.font-26 {
+  font-size: 26px !important;
+  line-height: 0; }
+
