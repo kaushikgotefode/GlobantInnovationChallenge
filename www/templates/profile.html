@@ -1,13 +1,14 @@
 <section class="profile">
-        <ion-header-bar align-title="left" class="bar-positive">
+    <ion-header-bar align-title="left" class="bar-positive">
         <div class="buttons">
             <button class="button"></button>
         </div>
         <h1 class="title textCenter">User Profile</h1>
         <div class="buttons">
-            <button class="button ion-ios-close-empty top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></button>
+            <a class="ion-ios-close-empty top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></a>
         </div>
     </ion-header-bar>
+    
     <ion-content class="userDetail">
         <div class="userPic">
             <img ng-src="{{userDtl.image}}">
