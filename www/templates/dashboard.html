@@ -1,9 +1,7 @@
 <section class="dashboard">
     <ion-header-bar align-title="left">
         <div class="col-20">
-
             <img class="hdr-login-img" ng-src="{{currntUsr.image}}" class="user-icon" alt="" ui-sref="app.profile">
-
         </div>
         <div class="col-60">
             <h3>Chip.co</h3>
@@ -43,11 +41,11 @@
                 <img ng-src="{{tree.image}}" alt="">
             </div>
 
-           <div class="card-tree" ng-repeat="tree in treeList" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
+            <div class="card-tree" ng-repeat="tree in treeList" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
                 <p>{{tree.name}}</p>
                 <img ng-src="{{tree.image}}" alt="">
             </div>
-            
+
             <div style="clear:both"></div>
         </div>
     </ion-content>
