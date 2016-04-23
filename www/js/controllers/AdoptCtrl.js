@@ -7,7 +7,12 @@
         treeListService.getData().then(function(response) {
             $scope.treeList = response.data.tree;
         });
-
+        $scope.adoptTree = function(tree) {
+            console.log(tree);
+        }
+        $scope.$on('slideBox.slideChanged', function(event, index) {
+            console.log('Slide box has been changed, current index is ' + index);
+        });
 
     }]);
 })();

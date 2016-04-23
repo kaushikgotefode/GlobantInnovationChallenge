@@ -15,10 +15,13 @@
                 <div class="box blue"><img ng-src="{{tree.image}}"></div>
                 <div class="box bue">{{tree.location}}</div>
                 <div class="box bue"> {{tree.distance}} away </div>
+                <div>
+                    <button ng-click="adoptTree(tree)">Adopt Tree</button>
+                </div>
             </ion-slide>
         </ion-slide-box>
-        <div>
-            <a href="javascript:void(0)"></a>
-        </div>
+        <!-- <div>
+                    <button ng-click="adoptTree(tree)">Adopt Tree</button>
+                </div> -->
     </ion-content>
 </section>
