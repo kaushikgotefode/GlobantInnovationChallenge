@@ -25,76 +25,105 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
-    .state('app', {
+  .state('login', {
+    url: '/login',
+    templateUrl: 'templates/login.html',
+    controller:'LoginCtrl'
+  })
+
+  .state('app', {
     url: '/app',
     abstract: true,
-    templateUrl: 'templates/menu.html',
-    controller: 'AppCtrl'
+    templateUrl: 'templates/container.html'
+    //controller: 'AppCtrl'
   })
+
+  .state('app.profile', {
+    url: '/profile',
+    controller: 'ProfileCtrl',
+    templateUrl: 'templates/profile.html'
+  })
+
+  .state('app.adopt', {
+    url: '/adopt',
+    controller: 'AdoptCtrl',
+    templateUrl: 'templates/adopttree.html'
+  })
+
 
   .state('app.search', {
     url: '/search',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/search.html'
-      }
-    }
+    templateUrl: 'templates/search.html'
+    // views: {
+    //   'menuContent': {
+    //     templateUrl: 'templates/search.html'
+    //   }
+    // }
   })
 
   .state('app.browse', {
       url: '/browse',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/browse.html'
-        }
-      }
-    })
-    .state('app.playlists', {
+      templateUrl: 'templates/browse.html'
+      // views: {
+      //   'menuContent': {
+      //     templateUrl: 'templates/browse.html'
+      //   }
+      // }
+  })
+  .state('app.playlists', {
       url: '/playlists',
-      views: {
-        'menuContent': {
-          templateUrl: 'templates/playlists.html',
+      templateUrl: 'templates/playlists.html',
           controller: 'PlaylistsCtrl'
-        }
-      }
+      // views: {
+      //   'menuContent': {
+      //     templateUrl: 'templates/playlists.html',
+      //     controller: 'PlaylistsCtrl'
+      //   }
+      // }
   })
       .state('app.tree_details', {
       url: '/tree_details',
-      views: {
-          'menuContent': {
-              templateUrl: 'templates/tree_details.html',
+      templateUrl: 'templates/tree_details.html',
+      // views: {
+          // 'menuContent': {
+              // templateUrl: 'templates/tree_details.html',
               // controller: 'PlaylistsCtrl'
-          }
-      }
+          // }
+      // }
   })
       .state('app.screen4', {
       url: '/screen4',
-      views: {
-          'menuContent': {
-              templateUrl: 'templates/screen4.html',
+      templateUrl: 'templates/screen4.html',
+      // views: {
+          // 'menuContent': {
+              // templateUrl: 'templates/screen4.html',
 //              controller: 'PlaylistsCtrl'
-          }
-      }
+          // }
+      // }
   })
       .state('app.screen5', {
       url: '/screen5',
-      views: {
-          'menuContent': {
-              templateUrl: 'templates/screen5.html',
+      templateUrl: 'templates/screen5.html',
+      // views: {
+          // 'menuContent': {
+              // templateUrl: 'templates/screen5.html',
               //              controller: 'PlaylistsCtrl'
-          }
-      }
+          // }
+      // }
   })
 
   .state('app.single', {
     url: '/playlists/:playlistId',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
-      }
-    }
+    templateUrl: 'templates/playlist.html',
+    controller: 'PlaylistCtrl'
+    // views: {
+    //   'menuContent': {
+    //     templateUrl: 'templates/playlist.html',
+    //     controller: 'PlaylistCtrl'
+    //   }
+    // }
   });
+
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/login');
 });
