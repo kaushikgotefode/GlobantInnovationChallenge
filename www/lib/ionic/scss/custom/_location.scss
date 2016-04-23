@@ -1,0 +1,19 @@
+.location {
+    background: url(../../../../img/login-bg.png);
+    height: 100%;
+    background-size: contain;
+    ion-header-bar {
+        background: transparent;
+        .top-icon {
+            float: right;
+            color: white;
+            font-size: 30px;
+        }
+    }
+    ion-content {
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+}
