@@ -9846,8 +9846,18 @@ a.button {
 .ion-wand:before {
   content: ""; }
 
+
+.chipco-submit-btn {
+  border: 2px solid #f2f2f2;
+  padding: 15px !important;
+  text-align: center !important;
+  color: #FFF;
+  font-size: 17px;
+  background: none; }
+
 .ion-waterdrop:before {
   content: ""; }
+
 
 .ion-wifi:before {
   content: ""; }

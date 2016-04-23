@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('starter.controllers').controller('LoginCtrl', ['$scope', '$timeout', '$state','loginService', function($scope, $timeout, $state,loginService) {
+    angular.module('starter.controllers').controller('LoginCtrl', function($scope, $timeout, $state, loginService,sharedService) {
 
         $scope.loginData = {};
 
@@ -27,20 +27,20 @@
 
         // Perform the login action when the user submits the login form
         $scope.doLogin = function() {
-            console.log('Doing login', $scope.loginData);
-            var loginUser = $scope.loginData.data.login;
-	        for (var i = 0; i < loginUser.length; i++) {
-	            var user = loginUser[i];
-	            if (user.email == $scope.usrname && user.password == $scope.psswrd) {
-	                // SharedDataService.setCurrentUser(user);
-	                $state.go('app.adopt');
-	                break;
-	            } else {
-	                $scope.errorMsg = true;
-	            }
-	        }
             
+            var loginUser = $scope.loginData.data.login;
+            for (var i = 0; i < loginUser.length; i++) {
+                var user = loginUser[i];
+                if (user.email == $scope.usrname && user.password == $scope.psswrd) {
+                    sharedService.setCurrentUser(user);
+                    console.log('logged in user', user.name);
+                    $state.go('app.adopt');
+                    break;
+                } else {
+                    $scope.errorMsg = true;
+                }
+            }
         };
 
-    }]);
+    });
 })();
