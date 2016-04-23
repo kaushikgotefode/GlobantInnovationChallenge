@@ -76,32 +76,11 @@
     line-height:0;
 }
 
-//ADOPT TREE PAGE
-.adoptTree {
+//CONGRATS PAGE
+.congrats {
     background: url('../../../../img/adopt_bg.png') no-repeat center;
     height: 100%;
     position: relative;
-    ion-header-bar {
-        background: rgba(61, 194, 177, 0.5);
-        .top-icon {
-            float: right;
-            color: white;
-            font-size: 24px;
-        }
-        .user-icon {
-            height: 30px;
-            width: 30px;
-        }
-        h3 {
-            font-family: "BoutiqueScript";
-            color: white;
-            margin: 0;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 22px;
-            width: 200px;
-        }
-    }
     ion-content {
         padding: 30px 0 0;
         .slider {
@@ -110,11 +89,6 @@
                 height: 66%;
             }
         }
-    }
-    .btn-tree {
-        position: absolute;
-        bottom: 0;
-        margin: 0;
     }
 }
 
@@ -135,6 +109,36 @@
         text-align: center;
         img {
             width: 50%;
+        }
+    }
+    .btn-tree {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+//ADOPT TREE PAGE
+.adoptTree {
+    ion-header-bar {
+        background: rgba(61, 194, 177, 0.5);
+        .top-icon {
+            float: right;
+            color: white;
+            font-size: 24px;
+        }
+        .user-icon {
+            height: 30px;
+            width: 30px;
+        }
+        h3 {
+            font-family: "BoutiqueScript";
+            color: white;
+            margin: 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 22px;
+            width: 200px;
         }
     }
 }
