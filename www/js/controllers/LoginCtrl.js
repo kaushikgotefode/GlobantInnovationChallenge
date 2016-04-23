@@ -33,7 +33,7 @@
                 var user = loginUser[i];
                 if (user.email == $scope.usrname && user.password == $scope.psswrd) {
                     sharedService.setCurrentUser(user);
-                    console.log('logged in user', user.name);
+                    localStorage.setItem("userObj", JSON.stringify(user));
                     $state.go('app.adopt');
                     break;
                 } else {
