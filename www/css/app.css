@@ -1,6 +1,10 @@
 .adoptTree {
     background: url('../img/adopt_bg.png') no-repeat center;
+    height: 100%;
 }
 .textCenter {
     text-align: center;
+}
+.height410 {
+    height: 410px;
 }
