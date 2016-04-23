@@ -1,4 +1,5 @@
-.adoptTree {
+.adoptTree,
+.congrats {
     background: url('../img/adopt_bg.png') no-repeat center;
     height: 100%;
 }
@@ -45,6 +46,7 @@
 .userDetail {
     color: white;
     text-align: center;
+    top:0px;
 }
 
 .userDetail span {
@@ -75,4 +77,23 @@
 
 .userDetail a {
     color: #ccc;
+}
+
+.main {
+    height: auto;
+    width: auto;
+    margin: 0 auto;
+    padding: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    resize: both;
+    overflow: auto;
+}
+
+.main img {
+    width: 55%;
+    padding: 19px;
+    overflow: auto;
+    margin-top: 40%;
 }
