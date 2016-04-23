@@ -4,17 +4,17 @@
     </div>
     <div class="row margin">
         <div class="input-field col s12">
-            <input class="validate center-align" id="email" type="text" placeholder="hello@chip.co">
+            <input class="validate center-align" id="email" type="text" ng-model="usrname" placeholder="hello@chip.co">
         </div>
     </div>
     <div class="row margin">
         <div class="input-field col s12">
-            <input id="password" type="password" class="center-align" placeholder="...........">
+            <input id="password" type="password" ng-model="psswrd" class="center-align" placeholder="password">
         </div>
     </div>
     <div class="row">
         <div class="input-field col s12">
-            <a ui-sref="app.dash" class="col s12 chipco-submit-btn">Let's Chip.Go </a>
+            <button type="submit" class="col s12 chipco-submit-btn" ng-click="doLogin()">Let's Chip.Go</button>
             <p class="margin center-align medium-small" style="padding:20px 0; float:left; width:100%;"><a class="whiteText" href="forgot-password.html">Forgot password?</a></p>
         </div>
     </div>
