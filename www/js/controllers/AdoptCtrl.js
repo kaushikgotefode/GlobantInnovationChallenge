@@ -38,11 +38,11 @@
       		if($scope.selectedSlideIndex === undefined) {
       			$scope.selectedSlideIndex = 1;
       		}
-      		
+
           for($scope.count=0; $scope.count<$scope.treeList.length; $scope.count++) {
           	if($scope.treeList[$scope.count].id === $scope.selectedSlideIndex) {
           		console.log($scope.treeList[$scope.count]);
-          		$state.go("app.location", $scope.treeList[$scope.count]);
+          		$state.go("app.congrats", $scope.treeList[$scope.count]);
           	}
           }
         };

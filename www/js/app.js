@@ -70,6 +70,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('app.congrats', {
     url: '/congrats',
+    controller: 'CongratsCtrl',
     templateUrl: 'templates/congrats.html'
   })
 

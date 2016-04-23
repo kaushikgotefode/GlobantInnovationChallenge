@@ -1,7 +1,6 @@
 (function(){
-    'use strict';
-
-    angular.module('starter.controllers').controller('CongratsCtrl', ['$scope', '$timeout', '$state', function($scope, $timeout, $state) {
-    	
+	'use strict';
+	angular.module('starter.controllers').controller('CongratsCtrl', ['$scope', '$timeout', '$state', '$stateParams', function($scope, $timeout, $state, $stateParams) {
+		console.log("hello! ", $stateParams); 	
 	}]);
 })();
