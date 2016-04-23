@@ -220,7 +220,7 @@ img.thumbnail {
 }
 
 .resetBG {
-    background: none !important;
+    background: rgba(255,255,200, 0.6);
 }
 .fontSize12 {
     font-size: 12px;
