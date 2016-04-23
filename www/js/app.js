@@ -88,7 +88,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
   
   .state('app.treeprofile', {
-      url: '/treeprofile',
+      url: '/treeprofile/:id',
       controller: 'TreeProfileCtrl',
       templateUrl: 'templates/treeprofile.html'
   })

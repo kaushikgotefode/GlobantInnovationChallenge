@@ -5,7 +5,7 @@ angular.module('starter.services', [])
  * @name sharedService
  * @description Getting User data and posting data.
  *
-*/
+ */
 .service('sharedService', function() {
 
     /**
@@ -13,8 +13,8 @@ angular.module('starter.services', [])
      * @name setCurrentUser
      * @description posting User data.
      *
-    */
-	this.setCurrentUser = function(data) {
+     */
+    this.setCurrentUser = function(data) {
         return this.currentUser = data;
     };
 
@@ -23,10 +23,22 @@ angular.module('starter.services', [])
      * @name getCurrentUser
      * @description getting User data.
      *
-    */
+     */
     this.getCurrentUser = function() {
         return this.currentUser;
     };
+    this.setTreeList = function(data) {
+        return this.treeList = data;
+    }
+    this.getTreeList = function() {
+        return this.treeList
+    }
+    this.setSelectedTree = function(data) {
+        return this.selectedTree = data;
+    }
+    this.getSelectedTree = function() {
+        return this.selectedTree
+    }
 })
 
 
@@ -35,7 +47,7 @@ angular.module('starter.services', [])
  * @name loginService
  * @description login cred data.
  *
-*/
+ */
 .factory('loginService', function($http) {
     return {
         /**
@@ -43,7 +55,7 @@ angular.module('starter.services', [])
          * @name getData
          * @description getting perticular User data for login.
          *
-        */
+         */
         getData: function() {
             return $http.get('./data/loginData.json').then(function(response) {
                 return response;
@@ -59,7 +71,7 @@ angular.module('starter.services', [])
  * @name treeListService
  * @description Tree data.
  *
-*/
+ */
 .factory('treeListService', function($http) {
     return {
         /**
@@ -67,7 +79,7 @@ angular.module('starter.services', [])
          * @name getData
          * @description getting Tree data object.
          *
-        */
+         */
         getData: function() {
             return $http.get('./data/treeProfileData.json').then(function(response) {
                 return response;
