@@ -38,28 +38,7 @@ angular.module('starter.controllers', [])
   // };
 
   // Perform the login action when the user submits the login form
-<<<<<<< fa10ad360bcdc8d8ec7d9bd1cb2a05e1ec7b984e
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
-    for(var i=0; i<$scope.loginDetails.length; i++) {
-      console.log($scope.loginDetails[i].email, $scope.loginDetails[i].password);
-      if($scope.loginDetails[i].email === $scope.loginData.username && $scope.loginDetails[i].password === $scope.loginData.password) {
-        console.log("login successfully");
-        $state.go('app.search');
-      }else {
-        console.log("Invalid Username or Password");
-      }
-    }
 
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
-
-  $scope.init();
-=======
   // $scope.doLogin = function() {
   //   console.log('Doing login', $scope.loginData);
 
@@ -69,7 +48,7 @@ angular.module('starter.controllers', [])
   //     $scope.closeLogin();
   //   }, 1000);
   // };
->>>>>>> Basic navigation
+
 })
 
 .controller('PlaylistsCtrl', function($scope) {
