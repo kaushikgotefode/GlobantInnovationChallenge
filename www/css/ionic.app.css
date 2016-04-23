@@ -6929,7 +6929,7 @@ a.button {
   background: url(../../../../img/dash_bg.jpg) no-repeat top left;
   height: 100%; }
   .dashboard ion-header-bar {
-    background: rgba(255, 255, 255, 0.5); }
+    background: rgba(255, 255, 255, 0.25); }
     .dashboard ion-header-bar .top-icon {
       float: right;
       color: white;
@@ -6940,15 +6940,55 @@ a.button {
     .dashboard ion-header-bar h3 {
       font-family: "BoutiqueScript";
       color: white;
-      margin: 0; }
+      margin: 0;
+      text-align: center; }
   .dashboard ion-content {
-    padding: 100px 0 0; }
-    .dashboard ion-content .card {
-      width: 50%;
-      float: left; }
-    .dashboard ion-content .card-tree {
-      height: 100px;
-      width: 50%; }
+    padding: 180px 0 0; }
+    .dashboard ion-content .top-row {
+      position: relative;
+      background: white;
+      text-align: center;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+      text-transform: uppercase; }
+      .dashboard ion-content .top-row p {
+        color: #ccc; }
+      .dashboard ion-content .top-row .points {
+        background: white;
+        height: 150px;
+        width: 150px;
+        border-radius: 75px;
+        padding: 0;
+        position: absolute;
+        bottom: 25px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+        .dashboard ion-content .top-row .points .inner {
+          height: 126px;
+          width: 126px;
+          margin: 12px;
+          border: 5px solid #1dc4c6;
+          border-radius: 63px; }
+          .dashboard ion-content .top-row .points .inner h2 {
+            color: #1dc4c6;
+            padding: 30px 0 0;
+            font-size: 40px; }
+            .dashboard ion-content .top-row .points .inner h2 p {
+              font-size: 20px;
+              color: #1dc4c6; }
+        .dashboard ion-content .top-row .points .star {
+          background: #35c61d;
+          width: 60px;
+          height: 60px;
+          position: absolute;
+          top: -15px;
+          right: -15px;
+          border-radius: 30px; }
+          .dashboard ion-content .top-row .points .star p {
+            color: white;
+            font-size: 36px;
+            margin: 0;
+            line-height: 50px; }
+    .dashboard ion-content .card-wrapper {
+      background: #f3f3f3; }
 
 /*!
   Ionicons, v2.0.1

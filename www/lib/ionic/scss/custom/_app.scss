@@ -97,7 +97,7 @@
     background: url(../../../../img/dash_bg.jpg) no-repeat top left;
     height: 100%;
     ion-header-bar {
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(255, 255, 255, 0.25);
         .top-icon {
             float: right;
             color: white;
@@ -111,17 +111,67 @@
             font-family: "BoutiqueScript";
             color: white;
             margin: 0;
+            text-align: center;
         }
     }
     ion-content {
-        padding: 100px 0 0;
-        .card {
-            width: 50%;
-            float: left;
+        padding: 180px 0 0;
+        .top-row {
+            position: relative;
+            background: white;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            p {
+                color: #ccc;
+            }
+            .points {
+                background: white;
+                height: 150px;
+                width: 150px;
+                border-radius: 75px;
+                padding: 0;
+                position: absolute;
+                bottom: 25px;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+                .inner {
+                    height: 126px;
+                    width: 126px;
+                    margin: 12px;
+                    border: 5px solid #1dc4c6;
+                    border-radius: 63px;
+                    h2 {
+                        color: #1dc4c6;
+                        padding: 30px 0 0;
+                        font-size: 40px;
+                        p {
+                            font-size: 20px;
+                            color: #1dc4c6;
+                        }
+                    }
+                }
+                .star {
+                    background: #35c61d;
+                    width: 60px;
+                    height: 60px;
+                    position: absolute;
+                    top: -15px;
+                    right: -15px;
+                    border-radius: 30px;
+                    p {
+                        color: white;
+                        font-size: 36px;
+                        margin: 0;
+                        line-height: 50px;
+                    }
+                }
+            }
         }
-        .card-tree {
-            height: 100px;
-            width: 50%;
+        .card-wrapper {
+            background: #f3f3f3;
+            .card-tree {
+
+            }
         }
     }
 }
