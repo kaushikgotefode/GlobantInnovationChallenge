@@ -1,3 +1,6 @@
 .adoptTree {
     background: url('../img/adopt_bg.png') no-repeat center;
 }
+.textCenter {
+    text-align: center;
+}
