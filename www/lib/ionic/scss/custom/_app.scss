@@ -20,6 +20,17 @@
     background: rgba(61, 194, 177, 1);
     color: white;
     text-transform: uppercase;
+    &:focus {
+        background: rgba(61, 194, 177, 1);
+        color: white;        
+    }
+    &.activated {
+        background: rgba(61, 194, 177, 1);
+        color: white;         
+    }
+    &:hover {
+        color: white;             
+    }
 }
 
 //LOGIN PAGE
