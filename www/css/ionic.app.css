@@ -6840,10 +6840,6 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.adopttree {
-  background: url(../../../../img/adopt_bg.png);
-  color: white; }
-
 ::-webkit-input-placeholder {
   color: white; }
 
@@ -6859,11 +6855,15 @@ a.button {
   color: white; }
 
 .chipco-login-form {
-  background: url(../img/Chipco-login-bg.png) no-repeat 0 0;
+  background: url(../../../../img/login-bg.png) no-repeat 0 0;
   -moz-background-size: 100% 100%;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
-  padding: 0 30px; }
+  padding: 0 30px;
+  text-align: center; }
+  .chipco-login-form img {
+    margin: 10px 0 0;
+    width: 80%; }
 
 .chipco-login-form input, .chipco-login-form input:focus, .chipco-login-form .input-field label {
   color: #f2f2f2;
@@ -6874,14 +6874,18 @@ a.button {
 
 .chipco-login-form input[type="text"], .chipco-login-form input[type="password"] {
   border-bottom: 1px solid #f2f2f2;
-  color: white; }
+  color: white;
+  background: transparent;
+  margin: 10px auto; }
 
 .chipco-submit-btn {
   border: 2px solid #f2f2f2;
-  padding: 15px !important;
-  text-align: center !important;
+  padding: 15px;
+  text-align: center;
   color: #FFF;
-  font-size: 17px; }
+  font-size: 17px;
+  background: transparent;
+  margin: 10px 0; }
 
 .chipco-submit-btn:hover {
   text-decoration: none;
@@ -6895,11 +6899,30 @@ a.button {
   text-decoration: none; }
 
 .chipco-login-form input[type="text"]:focus:not([readonly]) + label, .chipco-login-form input[type="password"]:focus:not([readonly]) + label {
-  color: #f2f2f2 !important; }
+  color: #f2f2f2; }
 
 .font-39 {
-  font-size: 39px !important;
+  font-size: 39px;
   line-height: 0; }
+
+.adopttree {
+  background: url(../../../../img/adopt_bg.png);
+  color: white; }
+
+.location {
+  background: url(../../../../img/login-bg.png);
+  height: 100%;
+  background-size: contain; }
+  .location ion-header-bar {
+    background: transparent; }
+    .location ion-header-bar .top-icon {
+      float: right;
+      color: white;
+      font-size: 30px; }
+  .location ion-content {
+    text-align: center; }
+    .location ion-content img {
+      width: 50%; }
 
 /*!
   Ionicons, v2.0.1
@@ -9846,18 +9869,8 @@ a.button {
 .ion-wand:before {
   content: ""; }
 
-
-.chipco-submit-btn {
-  border: 2px solid #f2f2f2;
-  padding: 15px !important;
-  text-align: center !important;
-  color: #FFF;
-  font-size: 17px;
-  background: none; }
-
 .ion-waterdrop:before {
   content: ""; }
-
 
 .ion-wifi:before {
   content: ""; }

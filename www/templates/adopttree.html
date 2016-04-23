@@ -1,4 +1,4 @@
-<section class="adopttree">
+<section class="adoptTree">
     <ion-header-bar align-title="left" class="bar-positive">
         <div class="buttons">
             <button class="button" ui-sref="app.profile">Profile</button>
@@ -8,20 +8,20 @@
             <button class="button ion-ios-redo-outline top-icon" data-pack="ios" data-tags="forward" ui-sref="app.adopt"></button>
         </div>
     </ion-header-bar>
-    <ion-content>
-        <h5>Select your tree</h5>
-        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+    <ion-content class="textCenter">
+        <h5 class="whiteFont uppercaseFont">Select your tree</h5>
+        <ion-slide-box on-slide-changed="slideHasChanged($index)" class="height410">
             <ion-slide ng-repeat="tree in treeList">
-                <div class="box blue"><img ng-src="{{tree.image}}"></div>
-                <div class="box bue">{{tree.location}}</div>
-                <div class="box bue"> {{tree.distance}} away </div>
-                <div>
-                    <button ng-click="adoptTree(tree)">Adopt Tree</button>
-                </div>
+                <div><img ng-src="{{tree.image}}"></div>
+                <div class="whiteFont uppercaseFont">{{tree.location}}</div>
+                <div class="whiteFont">{{tree.distance}} away </div>
             </ion-slide>
         </ion-slide-box>
-        <!-- <div>
-                    <button ng-click="adoptTree(tree)">Adopt Tree</button>
-                </div> -->
+        <div>
+            <a href="javascript:void(0)"></a>
+            <div class="row responsive-sm">
+                <button class="button button-full button-positive" ng-click="adoptTree(tree)">Adopt this tree</button>
+            </div>
+        </div>
     </ion-content>
 </section>

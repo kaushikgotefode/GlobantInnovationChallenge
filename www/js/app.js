@@ -62,6 +62,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/tree.html'
   })
 
+  .state('app.treeedit', {
+    url: '/treeedit',
+    controller: 'TreeeditCtrl',
+    templateUrl: 'templates/treeedit.html'
+  })
+
+  .state('app.congrats', {
+    url: '/congrats',
+    templateUrl: 'templates/congrats.html'
+  })
+
+  .state('app.location', {
+    url: '/location',
+    controller: 'LocationCtrl',
+    templateUrl: 'templates/location.html'
+  })
+
+  .state('app.emotree', {
+    url: '/emotree',
+    controller: 'EmotreeCtrl',
+    templateUrl: 'templates/emotree.html'
+  })
 
   .state('app.search', {
     url: '/search',
@@ -93,16 +115,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       //   }
       // }
   })
-      .state('app.screen4', {
-      url: '/screen4',
-      templateUrl: 'templates/screen4.html',
-      // views: {
-          // 'menuContent': {
-              // templateUrl: 'templates/screen4.html',
-//              controller: 'PlaylistsCtrl'
-          // }
-      // }
-  })
+
       .state('app.screen5', {
       url: '/screen5',
       templateUrl: 'templates/screen5.html',
