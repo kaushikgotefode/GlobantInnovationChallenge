@@ -9,11 +9,12 @@
         });
 
         $scope.slideHasChanged = function($index){
-			    alert('slideHasChanged $index=' + $index);
-			    if($index === 0){
-			      
-			    }
+			    console.log('slideHasChanged $index=' + $index);
 			  };
+
+        $scope.adoptTree = function(tree) {
+            console.log(tree);
+        }
 
     }]);
 })();
