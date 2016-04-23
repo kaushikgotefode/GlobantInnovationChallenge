@@ -36,7 +36,7 @@
         </div>
 
         <div class="card-wrapper">
-            <div class="card-tree" ng-repeat="tree in currntUsr.adoptedTrees" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
+            <div class="card-tree" ng-class="{'mytree': currntUsr.adoptedTrees}" ng-repeat="tree in currntUsr.adoptedTrees" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
                 <p>{{tree.name}}</p>
                 <img ng-src="{{tree.image}}" alt="">
             </div>

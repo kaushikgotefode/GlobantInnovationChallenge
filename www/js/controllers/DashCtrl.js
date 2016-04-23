@@ -11,7 +11,7 @@
         $scope.message = 'Guys do somethong here - from Dashboard ctrl';
 
         $scope.selectedTree=function(data){
-        	sharedService.setSelectedTree(data);
+        	localStorage.setItem("selectedTree", JSON.stringify(data));
         }
 
     }]);
