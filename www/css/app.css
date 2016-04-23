@@ -1,99 +1,127 @@
-.adoptTree,
-.congrats {
-    background: url('../img/adopt_bg.png') no-repeat center;
-    height: 100%;
-}
-
-.textCenter {
-    text-align: center;
-}
-
-.height410 {
-    height: 410px;
-}
-
-.whiteFont {
-    color: white;
-}
-
-
-/*userProfile css*/
-
-.uppercaseFontUser {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 22px;
-    color: white;
-}
-
-.userPic {
-    width: 180px;
-    height: 180px;
-    padding-top: 80px;
-    margin: 0px auto;
-}
-
-.userPic img {
-    border-radius: 90px;
-    width: inherit;
-    height: inherit;
-}
-
-.userInfo {
-    padding-top: 120px;
-}
-
-.userDetail {
-    color: white;
-    text-align: center;
-    top:0px;
-}
-
-.userDetail span {
-    color: #DDD;
-    margin: 2px 5px;
-    font-size: 15px;
-    display: inline-block;
-}
-
-.userDetail p {
-    font-size: 13px;
-    color: #DDD;
-    text-transform: uppercase;
-}
-
-.userstatus {
-    font-size: 22px;
-}
-
-.userDetail .row {
-    margin-top: 20px;
-}
-
-.userDetail .input-field button {
-    font-size: 10px;
-    padding: 5px;
-}
-
-.userDetail a {
-    color: #ccc;
-}
-
-.main {
-    height: auto;
-    width: auto;
-    margin: 0 auto;
-    padding: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    resize: both;
-    overflow: auto;
-}
-
-.main img {
-    width: 55%;
-    padding: 19px;
-    overflow: auto;
-    margin-top: 40%;
-}
+    .adoptTree,
+    .congrats {
+        background: url('../img/adopt_bg.png') no-repeat center;
+        height: 100%;
+    }
+    
+    .textCenter {
+        text-align: center;
+    }
+    
+    .height410 {
+        height: 410px;
+    }
+    
+    .whiteFont {
+        color: white;
+    }
+    /*userProfile css*/
+    
+    .uppercaseFontUser {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 22px;
+        color: white;
+    }
+    
+    .userPic {
+        width: 180px;
+        height: 180px;
+        padding-top: 80px;
+        margin: 0px auto;
+    }
+    
+    .userPic img {
+        border-radius: 90px;
+        width: inherit;
+        height: inherit;
+    }
+    
+    .userInfo {
+        padding-top: 120px;
+    }
+    
+    .userDetail {
+        color: white;
+        text-align: center;
+        top: 0px;
+    }
+    
+    .userDetail span {
+        color: #DDD;
+        margin: 2px 5px;
+        font-size: 15px;
+        display: inline-block;
+    }
+    
+    .userDetail p {
+        font-size: 13px;
+        color: #DDD;
+        text-transform: uppercase;
+    }
+    
+    .userstatus {
+        font-size: 22px;
+    }
+    
+    .userDetail .row {
+        margin-top: 20px;
+    }
+    
+    .userDetail .input-field button {
+        font-size: 10px;
+        padding: 5px;
+    }
+    
+    .userDetail a {
+        color: #ccc;
+    }
+    
+    .congratsThumb {
+        display: flex;
+        margin: 0% auto 25% auto;
+        width: 20%;
+        height: auto;
+        padding-top: 30%;
+    }
+    
+    .hdr-login-img {
+        border-radius: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .title.textCenter {
+        text-align: center !important;
+    }
+    
+    .adoptTree .bar.bar-positive {
+        border-color: #fff;
+        background-color: rgba(204, 204, 204, 0.4);
+        background-image: none;
+        color: #fff;
+    }
+    
+    .bar-positive .button {
+        background-color: rgba(56, 126, 245, 0);
+        font-size: 30px;
+    }
+    
+    .main {
+        height: auto;
+        width: auto;
+        margin: 0 auto;
+        padding: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        resize: both;
+        overflow: auto;
+    }
+    
+    .main img {
+        width: 55%;
+        padding: 19px;
+        overflow: auto;
+        margin-top: 40%;
+    }
