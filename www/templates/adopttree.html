@@ -1,7 +1,7 @@
 <section class="adoptTree">
     <ion-header-bar align-title="left">
         <div class="col s2">
-            <img src="../img/user.png" class="user-icon" alt="" ui-sref="app.profile">
+            <img class="hdr-login-img" ng-src="{{currntUsr.image}}" class="user-icon" alt="" ui-sref="app.profile">
         </div>
         <div class="col s8">
             <h3>Select Tree</h3>
@@ -10,7 +10,7 @@
             <a class="ion-ios-close-empty top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></a>
         </div>
     </ion-header-bar>
-    <ion-content class="textCenter">
+    <ion-content class="textCenter animated fadeInDown">
         <ion-slide-box on-slide-changed="slideHasChanged($index)">
             <ion-slide ng-repeat="tree in treeList">
                 <img ng-src="{{tree.image}}" class="tree-img">

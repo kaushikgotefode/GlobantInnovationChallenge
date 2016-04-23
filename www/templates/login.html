@@ -1,21 +1,23 @@
 <form class="login-form chipco-login-form">
 
-    <img src="img/login-logo.png" alt="">
-
-    <div class="row margin">
-        <div class="input-field col s12">
-            <input class="validate center-align" id="email" type="text" ng-model="usrname" placeholder="hello@chip.co">
+    <img src="img/login-logo.png" class="animated bounceInDown" alt="">
+    <div class="animated bounceIn">
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input class="validate center-align" id="email" type="text" ng-model="usrname" placeholder="hello@chip.co">
+            </div>
         </div>
-    </div>
-    <div class="row margin">
-        <div class="input-field col s12">
-            <input id="password" type="password" ng-model="psswrd" class="center-align" placeholder="password">
+        <div class="row margin">
+            <div class="input-field col s12">
+                <input id="password" type="password" ng-model="psswrd" class="center-align" placeholder="password">
+            </div>
         </div>
     </div>
     <div class="row">
         <div class="input-field col s12">
             <button type="submit" class="s12 chipco-submit-btn button-full" ng-click="doLogin()">Let's Chip.Go</button>
-            <p class="margin center-align medium-small" style="padding:20px 0; float:left; width:100%;"><a class="whiteText" href="forgot-password.html">Forgot password?</a></p>
+            <p class="margin center-align medium-small" style="padding:20px 0; float:left; width:100%;"><a class="whiteText" >Forgot password?</a></p>
+
         </div>
     </div>
 </form>
