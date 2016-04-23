@@ -104,11 +104,11 @@ img.thumbnail {
     border-radius: 50%;
 }
 
-.image:before {
+/*.image:before {
     content: "";
     display: inline-block;
     vertical-align: middle;
-}
+}*/
 
 .image {
     padding: 10px;
