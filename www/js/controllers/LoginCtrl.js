@@ -34,7 +34,12 @@
                 if (user.email == $scope.usrname && user.password == $scope.psswrd) {
                     sharedService.setCurrentUser(user);
                     localStorage.setItem("userObj", JSON.stringify(user));
-                    $state.go('app.adopt');
+                    if(user.adoptedTrees.length>=2){
+                        $state.go('app.dash');
+                    }else{
+                        $state.go('app.adopt');
+                    }
+                    
                     break;
                 } else {
                     $scope.errorMsg = true;

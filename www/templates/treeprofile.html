@@ -1,16 +1,18 @@
 <ion-header-bar align-title="left" class="bar bar-header">
-    <div class="col s2">
-        <img class="hdr-treePfl-img"ng-src="{{userDtl.image}}" class="user-icon" alt="">
-    </div>
-    <div class="col s8">
-        <h5>Neemo The Tree</h5>
-    </div>
-    <div class="col s2">
-        <a class="ion-heart top-icon" data-pack="ios" data-tags="forward" ui-sref="app.adopt" href="#/app/adopt"></a>
-    </div>
-</ion-header-bar>
-<ion-content>
-    <div class="treeProHd">
+
+        <div class="col s2">
+            <img class="hdr-treePfl-img"ng-src="{{userDtl.image}}" class="user-icon" alt="">
+        </div>
+        <div class="col s8">
+            <h5>{{selectedTree.name}}</h5>
+        </div>
+        <div class="col s2">
+            <a class="ion-heart top-icon" data-pack="ios" data-tags="forward" ui-sref="app.location"></a>
+        </div>
+    </ion-header-bar>
+    <ion-content>
+        <div class="treeProHd">
+
         <div style="float:left; width:50%; position:relative; top:72%; padding-left:20px;">
             <h4 class="whiteText">{{selectedTree.name}}</h4>
             <h5 class="whiteText">Adopted by {{selectedTree.adoptedBy}}</h5></div>
