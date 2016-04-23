@@ -5,5 +5,7 @@
 		
 		$scope.message = 'Guys do somethong here - from adopt ctrl';
 
+		
+
 	}]);
 })();

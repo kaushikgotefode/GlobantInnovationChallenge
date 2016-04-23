@@ -50,6 +50,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/adopttree.html'
   })
 
+  .state('app.dash', {
+    url: '/dashboard',
+    controller: 'DashCtrl',
+    templateUrl: 'templates/dashboard.html'
+  })
+
+  .state('app.tree', {
+    url: '/tree',
+    controller: 'TreeCtrl',
+    templateUrl: 'templates/tree.html'
+  })
+
 
   .state('app.search', {
     url: '/search',
@@ -79,16 +91,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       //     templateUrl: 'templates/playlists.html',
       //     controller: 'PlaylistsCtrl'
       //   }
-      // }
-  })
-      .state('app.tree_details', {
-      url: '/tree_details',
-      templateUrl: 'templates/tree_details.html',
-      // views: {
-          // 'menuContent': {
-              // templateUrl: 'templates/tree_details.html',
-              // controller: 'PlaylistsCtrl'
-          // }
       // }
   })
       .state('app.screen4', {
