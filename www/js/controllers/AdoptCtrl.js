@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module('starter.controllers').controller('AdoptCtrl', ['$scope', '$timeout', '$state', 'treeListService', 'sharedService', function($scope, $timeout, $state, treeListService, sharedService) {
+
+    angular.module('starter.controllers').controller('AdoptCtrl', ['$scope', '$timeout', '$state', 'treeListService', function($scope, $timeout, $state, treeListService) {
         $scope.treeList = [];
-        $scope.currntUsr = [];
         $scope.selectedSlideIndex = undefined;
 
         /**
@@ -13,8 +13,7 @@
          *
          */
         $scope.init = function() {
-
-            $scope.currntUsr = sharedService.getCurrentUser()
+            $scope.currntUsr = JSON.parse(localStorage.getItem('userObj'));
             treeListService.getData().then(function(response) {
                 $scope.treeList = response.data.tree;
             });
@@ -27,7 +26,6 @@
          *
          */
         $scope.slideHasChanged = function($index) {
-            console.log('slideHasChanged $index=' + $index);
             $scope.selectedSlideIndex = $index + 1;
         };
 
@@ -42,9 +40,9 @@
                 $scope.selectedSlideIndex = 1;
             }
 
+
             for ($scope.count = 0; $scope.count < $scope.treeList.length; $scope.count++) {
                 if ($scope.treeList[$scope.count].id === $scope.selectedSlideIndex) {
-                    console.log($scope.treeList[$scope.count]);
                     $state.go("app.congrats", { "adoptedTree": $scope.treeList[$scope.count] });
                     break;
                 }
