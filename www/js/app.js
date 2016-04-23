@@ -70,6 +70,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('app.congrats', {
     url: '/congrats',
+    params:  {adoptedTree: null},
+    controller: 'CongratsCtrl',
     templateUrl: 'templates/congrats.html'
   })
 
