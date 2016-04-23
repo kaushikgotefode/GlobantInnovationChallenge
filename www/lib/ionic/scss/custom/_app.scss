@@ -11,6 +11,7 @@
 :-ms-input-placeholder {
     color: white;
 }
+
 @font-face {
     font-family: 'BoutiqueScript';
     src: url('../../fonts/BoutiqueScript.otf'), url('../../fonts/BoutiqueScript.ttf');
@@ -85,6 +86,22 @@
 .font-39 {
     font-size:39px;
     line-height:0;
+}
+
+//PROFILE PAGE
+.profile {
+    background: url('../../../../img/adopt_bg.png') no-repeat center;
+    height: 100%;
+    position: relative;
+    ion-header-bar {
+        background: transparent;
+        border: none;
+        .top-icon {
+            float: right;
+            color: black;
+            font-size: 32px;
+        }
+    }
 }
 
 //CONGRATS PAGE

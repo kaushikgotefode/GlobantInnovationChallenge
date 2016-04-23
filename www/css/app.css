@@ -50,7 +50,7 @@
 }
 
 .userDetail span {
-    color: #DDD;
+    color: white;
     margin: 2px 5px;
     font-size: 15px;
     display: inline-block;
@@ -71,7 +71,7 @@
 }
 
 .userDetail .input-field button {
-    font-size: 10px;
+    font-size: 15px;
     padding: 5px;
 }
 
