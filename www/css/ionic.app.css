@@ -9323,10 +9323,10 @@ a.button {
       font-size: 32px; }
   .congrats ion-content {
     padding: 30px 0 0; }
-    .congrats ion-content .slider {
-      height: 450px; }
-      .congrats ion-content .slider .tree-img {
-        height: 66%; }
+    .congrats ion-content .congrats-img {
+      display: flex;
+      margin: 0% auto 23% auto;
+      width: 33%; }
   .congrats .btn-tree {
     position: absolute;
     bottom: 0;
@@ -9351,7 +9351,7 @@ a.button {
     position: absolute;
     bottom: 0;
     margin: 0;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     color: #3dc2b1; }
 
 .adoptTree {
@@ -9388,9 +9388,10 @@ a.button {
 
 .dashboard {
   background: url(../../../../img/dash_bg.jpg) no-repeat top left;
-  height: 100%; }
+  height: 100%;
+  background-size: contain; }
   .dashboard ion-header-bar {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.5);
     border: none; }
     .dashboard ion-header-bar .top-icon {
       float: right;
@@ -9463,25 +9464,22 @@ a.button {
             background: purple; }
     .dashboard ion-content .card-wrapper {
       background: #f3f3f3;
-      padding: 20px 10px; }
-      .dashboard ion-content .card-wrapper .left-col, .dashboard ion-content .card-wrapper .right-col {
-        margin: 2.5%;
-        width: 45%;
-        float: left; }
-        .dashboard ion-content .card-wrapper .left-col .card-tree, .dashboard ion-content .card-wrapper .right-col .card-tree {
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-          background: white;
-          text-transform: uppercase;
-          margin: 10px 0; }
-          .dashboard ion-content .card-wrapper .left-col .card-tree p, .dashboard ion-content .card-wrapper .right-col .card-tree p {
-            padding: 5px;
-            text-align: center;
-            margin: 0;
-            padding: 10px 0;
-            font-size: 16px; }
-          .dashboard ion-content .card-wrapper .left-col .card-tree img, .dashboard ion-content .card-wrapper .right-col .card-tree img {
-            width: 93%;
-            margin: 0 3.5%; }
+      padding: 10px; }
+      .dashboard ion-content .card-wrapper .card-tree {
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        background: white;
+        text-transform: uppercase;
+        margin: 10px 0;
+        position: relative; }
+        .dashboard ion-content .card-wrapper .card-tree p {
+          padding: 5px;
+          text-align: center;
+          margin: 0;
+          padding: 10px 0;
+          font-size: 16px; }
+        .dashboard ion-content .card-wrapper .card-tree img {
+          width: 100%;
+          margin: 0; }
 
 /*!
   Ionicons, v2.0.1

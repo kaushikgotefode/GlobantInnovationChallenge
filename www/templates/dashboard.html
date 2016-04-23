@@ -1,7 +1,9 @@
 <section class="dashboard">
     <ion-header-bar align-title="left">
         <div class="col-20">
-            <img src="../img/user.png" class="user-icon" alt="" ui-sref="app.dash">
+
+            <img class="hdr-login-img" ng-src="{{currntUsr.image}}" class="user-icon" alt="" ui-sref="app.profile">
+
         </div>
         <div class="col-60">
             <h3>Chip.co</h3>
@@ -14,13 +16,13 @@
     <ion-content>
         <div class="row top-row">
             <div class="col-25">
-                <b>2</b>
+                <b>{{currntUsr.noOfAdoptedTrees}}</b>
                 <p>trees</p>
             </div>
             <div class="col-40">
                 <div class="points">
                     <div class="inner">
-                        <h2>2000
+                        <h2>{{currntUsr.VGC}}
                             <p>vgc</p>
                         </h2>
                     </div>
@@ -36,33 +38,29 @@
         </div>
 
         <div class="card-wrapper">
-            <div class="left-col">
-                <div class="card-tree" ui-sref="app.treeprofile">
-                    <p>Tree Name</p>
-                    <img src="../img/dash1.jpg" alt="">
-                </div>
-                <div class="card-tree" ui-sref="app.treeprofile">
-                    <p>Tree Name</p>
-                    <img src="../img/dash2.jpg" alt="">
-                </div>
-                <div class="card-tree" ui-sref="app.treeprofile">
-                    <p>Tree Name</p>
-                    <img src="../img/dash3.jpg" alt="">
-                </div>
+            <div class="card-tree" ui-sref="app.treeprofile">
+                <p>Tree Name</p>
+                <img src="../img/dash1.jpg" alt="">
             </div>
-            <div class="right-col">
-                <div class="card-tree" ui-sref="app.treeprofile">
-                    <p>Tree Name</p>
-                    <img src="../img/dash4.jpg" alt="">
-                </div>
-                <div class="card-tree" ui-sref="app.treeprofile">
-                    <p>Tree Name</p>
-                    <img src="../img/dash5.jpg" alt="">
-                </div>
-                <div class="card-tree" ui-sref="app.treeprofile">
-                    <p>Tree Name</p>
-                    <img src="../img/dash6.jpg" alt="">
-                </div>
+            <div class="card-tree" ui-sref="app.treeprofile">
+                <p>Tree Name</p>
+                <img src="../img/dash2.jpg" alt="">
+            </div>
+            <div class="card-tree" ui-sref="app.treeprofile">
+                <p>Tree Name</p>
+                <img src="../img/dash3.jpg" alt="">
+            </div>
+            <div class="card-tree" ui-sref="app.treeprofile">
+                <p>Tree Name</p>
+                <img src="../img/dash4.jpg" alt="">
+            </div>
+            <div class="card-tree" ui-sref="app.treeprofile">
+                <p>Tree Name</p>
+                <img src="../img/dash5.jpg" alt="">
+            </div>
+            <div class="card-tree" ui-sref="app.treeprofile">
+                <p>Tree Name</p>
+                <img src="../img/dash6.jpg" alt="">
             </div>
             <div style="clear:both"></div>
         </div>
