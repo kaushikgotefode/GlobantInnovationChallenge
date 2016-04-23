@@ -10,10 +10,10 @@
     </ion-header-bar>
 
     <ion-content class="textCenter">
-        <h5 class="whiteFont uppercaseFont">Select your tree</h5>
+        <h5 class="whiteFont uppercaseFont">Select your tree</h5><br />
         <ion-slide-box on-slide-changed="slideHasChanged($index)" class="height410">
             <ion-slide ng-repeat="tree in treeList">
-                <div><img ng-src="{{tree.image}}"></div>
+                <div><img ng-src="{{tree.image}}"></div><br />
                 <div class="whiteFont uppercaseFont">{{tree.location}}</div>
                 <div class="whiteFont">{{tree.distance}} away </div>
             </ion-slide>
@@ -21,7 +21,7 @@
 
         <div><a href="javascript:void(0)"></a> </div>
         <div class="row responsive-sm">
-            <button class="button button-full button-positive">Adopt this tree</button>
+            <button class="button button-full button-positive" style="position:fixed; left:0; bottom:-58px;">Adopt this tree</button>
         </div>
     </ion-content>
 </section>
