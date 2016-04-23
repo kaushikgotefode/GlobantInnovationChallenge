@@ -1,25 +1,24 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+<div class="col-md-6 col-md-offset-3" style="padding:0;">
+  <form class="login-form chipco-login-form">
+    <div class="row">
+      <div class="input-field col s12 center"> <img src="img/login-logo.png" alt=""> </div>
     </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
-          <input type="text" ng-model="loginData.username">
-        </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
-          <input type="password" ng-model="loginData.password">
-        </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
-        </label>
+    <div class="row margin">
+      <div class="input-field col s12">
+        <input class="validate center-align" id="email" type="text">
+        <label for="email" data-error="wrong" data-success="right" class="center-align">hello@chip.co</label>
       </div>
-    </form>
-  </ion-content>
-</ion-modal-view>
+    </div>
+    <div class="row margin">
+      <div class="input-field col s12">
+        <input id="password" type="password" class="center-align">
+        <label for="password" class="font-39">...........</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12"> <a href="login.html" class="col s12 chipco-submit-btn">Let's Chip.Go </a>
+        <p class="margin center-align medium-small" style="padding:20px 0; float:left; width:100%;"><a class="whiteText" href="forgot-password.html">Forgot password?</a></p>
+      </div>
+    </div>
+  </form>
+</div>
