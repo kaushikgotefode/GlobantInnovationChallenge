@@ -1,17 +1,41 @@
-<ion-header-bar align-title="left" class="bar-positive">
-    <div class="buttons">
-        <button class="button"></button>
-    </div>
-    <h1 class="title">User Profile</h1>
-    <div class="buttons">
-        <button class="button ion-ios-close-empty top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></button>
-    </div>
-</ion-header-bar>
-
-<ion-content>
-    <h1>Profile html will goes here</h1>
-    <p>{{message}}</p>
-
-
-    <a ui-sref="login">Logout</a>
-</ion-content>
+<section class="adoptTree">
+    <ion-header-bar align-title="left" class="bar-positive">
+        <div class="buttons">
+            <button class="button"></button>
+        </div>
+        <h1 class="title">User Profile</h1>
+        <div class="buttons">
+            <button class="button ion-ios-close-empty top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></button>
+        </div>
+    </ion-header-bar>
+    <ion-content class="userDetail">
+        <div class="userPic">
+            <img ng-src="{{userDtl.image}}">
+        </div>
+        <div class="userInfo">
+            <h1 class="uppercaseFontUser">{{userDtl.name}}</h1>
+            <div class="user-detail">
+                <span>{{userDtl.age}}, {{userDtl.occupation}},</span>
+                <br>
+                <span>{{userDtl.address}}</span>
+            </div>
+            <div class="row">
+                <div class="col col-33 userstatus">{{userDtl.noOfAdoptedTrees}}
+                    <p>My Trees</p>
+                </div>
+                <div class="col col-33 userstatus">{{userDtl.VGC}}
+                    <p>VGC</p>
+                </div>
+                <div class="col col-33 userstatus">{{userDtl.emotrees}}
+                    <p>emotrees</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col col-33 col-offset-33">
+                    <button type="submit" class="s12 chipco-submit-btn button-full" >Share on Facebook</button>
+                </div>
+            </div>
+        </div>
+        <a ui-sref="login">Logout</a>
+    </ion-content>
+</section>
