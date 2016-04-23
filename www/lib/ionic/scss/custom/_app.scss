@@ -94,6 +94,7 @@
     position: relative;
     ion-header-bar {
         background: transparent;
+        border: none;
         .top-icon {
             float: right;
             color: black;
@@ -123,6 +124,7 @@
     background-size: contain;
     ion-header-bar {
         background: transparent;
+        border: none;
         .top-icon {
             float: right;
             color: white;
@@ -150,6 +152,7 @@
     height: 100%;
     ion-header-bar {
         background: rgba(61, 194, 177, 0.5);
+        border: none;
         .top-icon {
             float: right;
             color: white;
@@ -191,6 +194,7 @@
     height: 100%;
     ion-header-bar {
         background: rgba(255, 255, 255, 0.25);
+        border: none;
         .top-icon {
             float: right;
             color: white;
@@ -247,7 +251,6 @@
                     }
                 }
                 .star {
-                    background: #35c61d;
                     width: 60px;
                     height: 60px;
                     position: absolute;
@@ -260,16 +263,49 @@
                         margin: 0;
                         line-height: 50px;
                     }
+                    &.green {
+                        background: #35c61d;                        
+                    }
+                    &.blue {
+                        background: blue;
+                    }
+                    &.orange {
+                        background: orange;
+                    }
+                    &.yellow {
+                        background: yellow;
+                    }
+                    &.purple {
+                        background: purple;
+                    }
                 }
             }
         }
         .card-wrapper {
             background: #f3f3f3;
             padding: 20px 10px;
-            .card-tree {
-                background: white;
+            .left-col, .right-col {
                 margin: 2.5%;
-                width: 44%;
+                width: 45%;
+                float: left;
+                .card-tree {
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+                    background: white;
+                    text-transform: uppercase;
+                    margin: 10px 0;
+                    p {
+                        padding: 5px;
+                        text-align: center;
+                        margin: 0;
+                        padding: 10px 0;
+                        font-size: 16px;
+                    }
+                    img {
+                        width: 93%;
+                        margin: 0 3.5%;
+                    }
+                }
+
             }
         }
     }
