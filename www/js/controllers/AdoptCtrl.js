@@ -44,7 +44,7 @@
 
 
             for ($scope.count = 0; $scope.count < $scope.treeList.length; $scope.count++) {
-                if ($scope.treeList.indexOf($scope.treeList[$scope.count + 1]) === $scope.selectedSlideIndex) {
+                if ($scope.treeList.indexOf($scope.treeList[$scope.count]) === $scope.selectedSlideIndex-1) {
                     $state.go("app.congrats", { "adoptedTree": $scope.treeList[$scope.count] });
                     break;
                 }
