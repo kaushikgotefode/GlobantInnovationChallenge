@@ -1,13 +1,13 @@
 <section class="treeedit">
     <ion-header-bar align-title="left">
         <div class="col-10">
-            <img class="hdr-login-img" ng-src="{{userDtl.image}}" class="user-icon" alt="" ui-sref="app.profile">
+            <a class="ion-arrow-left-c top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></a>
         </div>
         <div class="col-80">
-            <h3>Neemo The Tree</h3>
+            <h3>{{selectedTree.name}}</h3>
         </div>
         <div class="col-10">
-            <a class="ion-heart top-icon" data-pack="ios" data-tags="forward" ui-sref="app.dash"></a>
+            
         </div>
     </ion-header-bar>
 
@@ -31,5 +31,5 @@
             <h4 style="text-align:center;">Thank you for keeping me moist!</h4>
         </div>
     </ion-content>
-    <img style="position:absolute; bottom: 10px; right:10px;" src="../img/moodePer.png" />
+    <img style="position:absolute; bottom: 20px; right: 20px;" src="../img/moodePer.png" ui-sref="app.emotree" />
 </section>

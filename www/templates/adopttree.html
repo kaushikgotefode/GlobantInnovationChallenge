@@ -1,7 +1,7 @@
 <section class="adoptTree">
     <ion-header-bar align-title="left">
         <div class="col s2">
-            <img class="hdr-login-img" ng-src="{{currntUsr.image}}" class="user-icon" alt="" ui-sref="app.profile">
+            
         </div>
         <div class="col s8">
             <h3>Select Tree</h3>
@@ -14,11 +14,10 @@
         <ion-slide-box on-slide-changed="slideHasChanged($index)">
             <ion-slide ng-repeat="tree in treeList">
                 <img ng-src="{{tree.image}}" class="tree-img">
-                <br />
-                <div class="whiteFont uppercaseFont">{{tree.location}}</div>
-                <div class="whiteFont">{{tree.distance}} away </div>
+                <h4 class="whiteFont uppercaseFont">{{tree.location}}</h4>
+                <h5 class="whiteFont">{{tree.distance}} away</h5>
             </ion-slide>
         </ion-slide-box>
     </ion-content>
-    <button class="button button-full btn-tree" ng-click="adoptTree()">Adopt this tree</button>
+    <button class="button button-full btn-tree" ng-click="adoptTree()" style="text-transform: capitalize" >Adopt Me</button>
 </section>

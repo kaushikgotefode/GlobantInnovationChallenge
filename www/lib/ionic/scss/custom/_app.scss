@@ -187,11 +187,16 @@
         }
     }
     ion-content {
-        padding: 30px 0 0;
+        padding: 20px 0 0;
         .slider {
-            height: 450px;
+            height: 500px;
             .tree-img {
-                height: 66%;
+                height: 80%;
+            }
+            .slider-pager {
+                .slider-pager-page {
+                    font-size: 8px;
+                }
             }
         }
     }
@@ -228,10 +233,13 @@
             font-size: 16px;
             width: 200px;
             // font-weight: 700;
+            img {
+                height: 35px;
+            }
         }
     }
     ion-content {
-        padding: 180px 0 0;
+        padding: 165px 0 0;
         .top-row {
             position: relative;
             background: white;
@@ -299,13 +307,12 @@
         }
         .card-wrapper {
             background: #f3f3f3;
-            padding: 10px;
+            padding: 0;
             .card-tree {
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
                 background: white;
                 text-transform: uppercase;
-                margin: 10px 0;
-                position: relative;
+                margin: 5px 0;
                 p {
                     padding: 5px;
                     text-align: center;
@@ -315,8 +322,12 @@
                 }
                 img {
                     width: 100%;
-                    margin: 0;
-
+                    margin: 0 0 -5px 0;
+                }
+                &.mytree {
+                    p {
+                        background: rgba(61, 194, 177, 0.75);
+                    }
                 }
             }
         }
