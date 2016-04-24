@@ -153,7 +153,22 @@
     ion-content {
         text-align: center;
         img {
-            width: 50%;
+            width: 66%;
+        }
+        .item-select {
+            margin: 20px 0 0;
+            background: transparent;
+            color: white;
+            .input-label {
+                text-align: left;
+            }
+        }
+        p {
+            color: white;
+            font-size: 16px;
+            span {
+                font-size: 20px;
+            }
         }
     }
     .btn-tree {

@@ -6670,8 +6670,8 @@ a.button {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -6696,8 +6696,8 @@ a.button {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg); }
+    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
+    transform: skewX(0.39063deg) skewY(0.39063deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -9020,7 +9020,18 @@ a.button {
   .location ion-content {
     text-align: center; }
     .location ion-content img {
-      width: 50%; }
+      width: 66%; }
+    .location ion-content .item-select {
+      margin: 20px 0 0;
+      background: transparent;
+      color: white; }
+      .location ion-content .item-select .input-label {
+        text-align: left; }
+    .location ion-content p {
+      color: white;
+      font-size: 16px; }
+      .location ion-content p span {
+        font-size: 20px; }
   .location .btn-tree {
     position: absolute;
     bottom: 0;
