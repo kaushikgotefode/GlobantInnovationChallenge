@@ -19,14 +19,14 @@
                     <div class="input-label">
                         Choose your location
                     </div>
-                    <select>
+                    <select ng-model="yourLocation">
+                        <option value="hsr">HSR Layout</option>
                         <option value="koramangala">Koramangala</option>
-                        <option value="hsr" selected>HSR Layout</option>
                         <option value="madiwala">Madiwala</option>
                     </select>
                 </label>
             </div>
-            <p class="col"><i class="ion-android-pin"></i> You are in <span>HSR Layout</span></p>
+            <p class="col"><i class="ion-android-pin"></i> You are in <span style="text-transform:capitalize">{{yourLocation}}</span></p>
         </div>
     </ion-content>
     <button class="button button-full btn-tree" ui-sref="app.adopt">Browse</button>
