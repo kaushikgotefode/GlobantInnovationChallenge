@@ -9032,17 +9032,20 @@ a.button {
   position: relative;
   height: 100%; }
   .adoptTree ion-header-bar {
-    background: rgba(61, 194, 177, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     border: none; }
     .adoptTree ion-header-bar .top-icon {
       float: right;
       color: white;
       font-size: 24px; }
+    .adoptTree ion-header-bar .top-icon:before {
+      color: #3dc2b1;
+      margin-top: -6px; }
     .adoptTree ion-header-bar .user-icon {
       height: 30px;
       width: 30px; }
     .adoptTree ion-header-bar h3 {
-      color: white;
+      color: #3dc2b1;
       margin: 0;
       text-align: center;
       text-transform: uppercase;
@@ -9066,12 +9069,14 @@ a.button {
   height: 100%;
   background-size: contain; }
   .dashboard ion-header-bar {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(61, 194, 177, 0.55);
     border: none; }
     .dashboard ion-header-bar .top-icon {
       float: right;
       color: white;
       font-size: 24px; }
+      .dashboard ion-header-bar .top-icon:before {
+        margin-top: 5px; }
     .dashboard ion-header-bar .user-icon {
       height: 30px;
       width: 30px; }
@@ -9191,16 +9196,18 @@ a.button {
   background-size: contain;
   position: relative; }
   .treeedit ion-header-bar {
-    background: rgba(255, 255, 255, 0.4); }
+    background: rgba(255, 255, 255, 0.7); }
     .treeedit ion-header-bar h3 {
       text-align: center;
-      color: white;
+      color: #3dc2b1;
       font-size: 18px; }
     .treeedit ion-header-bar .top-icon {
       float: right;
       padding: 0 5px 0 0;
       color: white;
       font-size: 24px; }
+      .treeedit ion-header-bar .top-icon:before {
+        color: #3dc2b1; }
   .treeedit ion-content .treeProHd h4, .treeedit ion-content .treeProHd h5 {
     color: white; }
   .treeedit ion-content i {
