@@ -4,6 +4,8 @@
     angular.module('starter.controllers').controller('LoginCtrl', function($scope, $timeout, $state, loginService,sharedService) {
 
         $scope.loginData = {};
+        $scope.gotError = false;
+        $scope.isTrueUser = false;
 
         loginService.getData().then(function(response) {
             $scope.loginData = response;
@@ -39,11 +41,12 @@
                     }else{
                         $state.go('app.adopt');
                     }
-                    
+                    $scope.isTrueUser = true;
                     break;
-                } else {
-                    $scope.errorMsg = true;
                 }
+            }
+            if(!$scope.isTrueUser) {
+                $scope.gotError = true;
             }
         };
 
