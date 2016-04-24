@@ -12,7 +12,7 @@
     </ion-header-bar>
 
     <ion-content>
-        <div class="row top-row">
+        <div class="row top-row animated bounceInDown">
             <div class="col-25">
                 <b>{{currntUsr.noOfAdoptedTrees}}</b>
                 <p> my trees</p>
@@ -24,7 +24,7 @@
                             <p>vgc</p>
                         </h2>
                     </div>
-                    <div class="star" ng-class="{yellow : currntUsr.batch=='Beginner', orange : currntUsr.batch=='Amateur', blue : currntUsr.batch=='Advanced', green : currntUsr.batch=='Expert', purple : currntUsr.batch=='Master'}">
+                    <div class="star" ng-class="{orange : currntUsr.batch=='Beginner', yellow : currntUsr.batch=='Amateur', blue : currntUsr.batch=='Advanced', green : currntUsr.batch=='Expert', purple : currntUsr.batch=='Master'}">
                         <p class="ion-ios-star-outline"></p>
                     </div>
                 </div>
@@ -36,12 +36,12 @@
         </div>
 
         <div class="card-wrapper">
-            <div class="card-tree" ng-class="{'mytree': currntUsr.adoptedTrees}" ng-repeat="tree in currntUsr.adoptedTrees" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
+            <div class="card-tree animated bounceInLeft" ng-class="{'mytree': currntUsr.adoptedTrees}" ng-repeat="tree in currntUsr.adoptedTrees" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
                 <p>{{tree.name}}</p>
                 <img ng-src="{{tree.image}}" alt="">
             </div>
 
-            <div class="card-tree" ng-repeat="tree in treeList" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
+            <div class="card-tree animated bounceInLeft" ng-repeat="tree in treeList" ng-click="selectedTree(tree)" ui-sref="app.treeprofile({id:tree.id})">
                 <p>{{tree.name}}</p>
                 <img ng-src="{{tree.image}}" alt="">
             </div>

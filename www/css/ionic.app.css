@@ -8988,8 +8988,9 @@ a.button {
     border: none; }
     .congrats ion-header-bar .top-icon {
       float: right;
-      color: black;
       font-size: 32px; }
+      .congrats ion-header-bar .top-icon:before {
+        color: black; }
   .congrats ion-content {
     padding: 30px 0 0; }
     .congrats ion-content .congrats-img {

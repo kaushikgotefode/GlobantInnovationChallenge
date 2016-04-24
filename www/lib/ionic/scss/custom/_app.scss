@@ -110,8 +110,10 @@
         border: none;
         .top-icon {
             float: right;
-            color: black;
             font-size: 32px;
+            &:before {
+                color: black;
+            }
         }
     }
     ion-content {
