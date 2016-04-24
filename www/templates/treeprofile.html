@@ -7,26 +7,28 @@
             <h3>{{selectedTree.name}}</h3>
         </div>
         <div class="col-10">
-            
+
         </div>
     </ion-header-bar>
 
     <ion-content>
-        <div class="treeProHd">
-            <div style="float:left; width:50%; position:relative; top:72%; padding-left:20px;">
+        <div class="treeProHd animated bounceIn">
+            <div style="float:left; width:50%; position:relative; top:60%; padding-left:20px;">
                 <h4 class="">{{selectedTree.name}}</h4>
                 <h5 class="">Adopted by {{selectedTree.adoptedBy}}</h5></div>
             <div style="float:left; width:50%; position:relative; top:72%; padding-right:20px;"><p class="whiteText" style="float:right">{{selectedTree.distance}} Away</p></div>
         </div>
 
-        <div class="tfper text-center border-right"><h4><i class="ion-leaf"></i></h4><h6>Info</h6></div>
-        <div class="tfper text-center border-right active"><h4><i class="ion-waterdrop"></i></h4><h6>Moisture</h6></div>
-        <div class="tfper text-center border-right"><h4><i class="ion-erlenmeyer-flask"></i></h4><h6>Fertilizer</h6></div>
-        <div class="tfper text-center"><h4><i class="ion-umbrella"></i></h4><h6>Temperature</h6></div>
+        <div class="animated pulse">
+            <div class="tfper text-center border-right"><h4><i class="ion-leaf"></i></h4><h6>Info</h6></div>
+            <div class="tfper text-center border-right active"><h4><i class="ion-waterdrop"></i></h4><h6>Moisture</h6></div>
+            <div class="tfper text-center border-right"><h4><i class="ion-erlenmeyer-flask"></i></h4><h6>Fertilizer</h6></div>
+            <div class="tfper text-center"><h4><i class="ion-umbrella"></i></h4><h6>Temperature</h6></div>
+        </div>
 
-        <div class="mood">
+        <div class="mood animated bounceInUp">
             <img style="display:flex; width:100%;" src="/img/happy-mood.png">
-            <h4 style="margin:10% auto 0 auto; border:1px solid #09F; padding:10px; width:60px;">85%</h4>
+            <h4 style="margin:8% auto 0 auto; border:1px solid #09F; padding:10px; width:60px;">85%</h4>
             <h5 style="text-align:center;">Soil Moinsture</h5>
             <h4 style="text-align:center;">Thank you for keeping me moist!</h4>
         </div>

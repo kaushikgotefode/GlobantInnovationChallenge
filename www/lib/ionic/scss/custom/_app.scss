@@ -407,10 +407,11 @@
     background-size: contain;
     position: relative;
     ion-header-bar {
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(61, 194, 177, 0.55);
+        border: none;
         h3 {
             text-align: center;
-            color: #3dc2b1;
+            color: white;
             font-size: 18px;
         }
         .top-icon {
@@ -419,7 +420,7 @@
             color: white;
             font-size: 24px;
             &:before {
-                color: #3dc2b1;
+                color: white;
             }
         }
     }
@@ -437,4 +438,18 @@
             color: #ccc;
         }
     }
+}
+
+//EMOTREE
+.emoTree {
+    .top-icon {
+        float: right;
+        padding: 0 5px 0 0;
+        color: white;
+        font-size: 24px;
+        &:before {
+            color: white;
+        }
+    }
+
 }
