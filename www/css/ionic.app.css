@@ -6670,8 +6670,8 @@ a.button {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -6696,8 +6696,8 @@ a.button {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
     transform: skewX(-0.78125deg) skewY(-0.78125deg); }
   77.7% {
-    -webkit-transform: skewX(0.39063deg) skewY(0.39063deg);
-    transform: skewX(0.39063deg) skewY(0.39063deg); }
+    -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
+    transform: skewX(0.39062deg) skewY(0.39062deg); }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
     transform: skewX(-0.19531deg) skewY(-0.19531deg); } }
@@ -8925,6 +8925,10 @@ a.button {
   .chipco-login-form img {
     margin: 10px 0 0;
     width: 80%; }
+  .chipco-login-form .error-message {
+    font-size: 12px;
+    color: red;
+    text-align: left; }
 
 .chipco-login-form input, .chipco-login-form input:focus, .chipco-login-form .input-field label {
   color: #f2f2f2;
@@ -9029,17 +9033,20 @@ a.button {
   position: relative;
   height: 100%; }
   .adoptTree ion-header-bar {
-    background: rgba(61, 194, 177, 0.5);
+    background: rgba(255, 255, 255, 0.5);
     border: none; }
     .adoptTree ion-header-bar .top-icon {
       float: right;
       color: white;
       font-size: 24px; }
+    .adoptTree ion-header-bar .top-icon:before {
+      color: #3dc2b1;
+      margin-top: -6px; }
     .adoptTree ion-header-bar .user-icon {
       height: 30px;
       width: 30px; }
     .adoptTree ion-header-bar h3 {
-      color: white;
+      color: #3dc2b1;
       margin: 0;
       text-align: center;
       text-transform: uppercase;
@@ -9063,12 +9070,14 @@ a.button {
   height: 100%;
   background-size: contain; }
   .dashboard ion-header-bar {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(61, 194, 177, 0.55);
     border: none; }
     .dashboard ion-header-bar .top-icon {
       float: right;
       color: white;
       font-size: 24px; }
+      .dashboard ion-header-bar .top-icon:before {
+        margin-top: 5px; }
     .dashboard ion-header-bar .user-icon {
       height: 30px;
       width: 30px; }
@@ -9188,16 +9197,18 @@ a.button {
   background-size: contain;
   position: relative; }
   .treeedit ion-header-bar {
-    background: rgba(255, 255, 255, 0.4); }
+    background: rgba(255, 255, 255, 0.7); }
     .treeedit ion-header-bar h3 {
       text-align: center;
-      color: white;
+      color: #3dc2b1;
       font-size: 18px; }
     .treeedit ion-header-bar .top-icon {
       float: right;
       padding: 0 5px 0 0;
       color: white;
       font-size: 24px; }
+      .treeedit ion-header-bar .top-icon:before {
+        color: #3dc2b1; }
   .treeedit ion-content .treeProHd h4, .treeedit ion-content .treeProHd h5 {
     color: white; }
   .treeedit ion-content i {

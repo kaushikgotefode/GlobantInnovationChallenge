@@ -41,6 +41,11 @@
         margin: 10px 0 0;
         width: 80%;
     }
+    .error-message {
+        font-size: 12px;
+        color: red;
+        text-align: left;
+    }
 }
 .chipco-login-form input, .chipco-login-form input:focus, .chipco-login-form .input-field label {
     color:#f2f2f2;
@@ -166,12 +171,18 @@
     position: relative;
     height: 100%;
     ion-header-bar {
-        background: rgba(61, 194, 177, 0.5);
+        background: rgba(255, 255, 255, 0.5);
         border: none;
+
         .top-icon {
             float: right;
             color: white;
             font-size: 24px;
+        }
+
+        .top-icon:before {
+            color: #3dc2b1;
+            margin-top: -6px;
         }
         .user-icon {
             height: 30px;
@@ -179,7 +190,7 @@
         }
         h3 {
             //            font-family: 'Dancing Script', cursive;
-            color: white;
+            color: #3dc2b1;
             margin: 0;
             text-align: center;
             text-transform: uppercase;
@@ -215,12 +226,15 @@
     height: 100%;
     background-size: contain;
     ion-header-bar {
-        background: rgba(255, 255, 255, 0.5);
+        background: rgba(61, 194, 177, 0.55);
         border: none;
         .top-icon {
             float: right;
             color: white;
             font-size: 24px;
+            &:before {
+                margin-top: 5px;
+            }
         }
         .user-icon {
             height: 30px;
@@ -378,10 +392,10 @@
     background-size: contain;
     position: relative;
     ion-header-bar {
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.7);
         h3 {
             text-align: center;
-            color: white;
+            color: #3dc2b1;
             font-size: 18px;
         }
         .top-icon {
@@ -389,6 +403,9 @@
             padding: 0 5px 0 0;
             color: white;
             font-size: 24px;
+            &:before {
+                color: #3dc2b1;
+            }
         }
     }
     ion-content {
